@@ -1,8 +1,6 @@
 import math
 
 #### Zad1. ####
-import string
-
 print("\n Zadanie 1 \n")
 
 a=10
