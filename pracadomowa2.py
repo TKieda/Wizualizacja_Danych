@@ -43,3 +43,21 @@ if (len(liczby)==3):
 else:
     print("Wprowadzono za mało bądź za dużo liczb")
 
+#### Zad6. ####
+print("\n Zadanie 6 \n")
+
+lista = [0]*3
+lista[0] = int(input("Podaj pierwszą liczbę: "))
+lista[1] = int(input("Podaj pierwszą liczbę: "))
+lista[2] = int(input("Podaj pierwszą liczbę: "))
+
+for a in lista:
+    if lista[0] < lista[1]:
+        lista[0]=lista[1]
+        for b in lista:
+            if lista[1]<lista[2]:
+                lista[0]=lista[2]
+    else:
+        if lista[0] < lista[2]:
+            lista[0] = lista[2]
+print("\nNajwiększą liczbą jest:", lista[0])
