@@ -91,3 +91,8 @@ print(n1)
 #### Zad9. ####
 print("\n Zadanie 9 \n")
 
+o="jakiś string"
+p=1.5
+r=0xF44
+
+print('Zmienna o: {0:s} \n Zmienna p: {1:.3f} \n Zmienna r: {2:X}'.format(o,p,r))
