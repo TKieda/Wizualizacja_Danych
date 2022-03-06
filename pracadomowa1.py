@@ -137,11 +137,11 @@ print(sys.version)
 
 
 # Metody listy
-lista = [4,3,1,5,4,2] # lista
-print(len(lista)) # długość listy
-lista.append(0) # dodanie argumentu na końcu listy
-print(lista)
-print(len(lista))
-lista.insert(3, 'abc') # dodanie argumentu do konkretnego miejsca listy
-print(lista)
-print(len(lista))
+# lista = [4,3,1,5,4,2] # lista
+# print(len(lista)) # długość listy
+# lista.append(0) # dodanie argumentu na końcu listy
+# print(lista)
+# print(len(lista))
+# lista.insert(3, 'abc') # dodanie argumentu do konkretnego miejsca listy
+# print(lista)
+# print(len(lista))
