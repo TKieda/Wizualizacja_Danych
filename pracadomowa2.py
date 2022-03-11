@@ -34,10 +34,10 @@ print("Ilość liter 'a' wynosi:", l.count("a")+l.count("A"))
 #### Zad5. ####
 print("\n Zadanie 5 \n")
 
-system.stdout.write("Podaj trzy liczby: ")
-liczby = system.stdin.readline().split(' ')
-if (len(liczby)==3):
-    dzialanie=math.pow(int(liczby[0]),int(liczby[1]))+int(liczby[2])
+system.stdout.write("Podaj trzy liczby oddzielając je spacjami: ")
+liczby1 = system.stdin.readline().split(' ')
+if (len(liczby1)==3):
+    dzialanie=math.pow(int(liczby1[0]),int(liczby1[1]))+int(liczby1[2])
     print("Wynik: ", end="")
     system.stdout.write(str(dzialanie))
 else:
@@ -68,18 +68,18 @@ for element in lista2:
 #### Zad8. ####
 print("\n Zadanie 8 \n")
 
-liczby=[0]*10
+liczby2=[0]*10
 liczbyParzyste=[]
 n=0
 
 while n<10:
-    liczby[n]=int(input("Podaj " +str(n+1)+ " liczbę:"))
+    liczby2[n]=int(input("Podaj " +str(n+1)+ " liczbę:"))
     n+=1
-print("Tablica ze wszystkimi liczbami", liczby)
+print("Tablica ze wszystkimi liczbami", liczby2)
 
 x=0
 while x<10:
-    if liczby[x]%2==0:
-        liczbyParzyste.append(liczby[x])
+    if liczby2[x]%2==0:
+        liczbyParzyste.append(liczby2[x])
     x+=1
 print("Tablica tylko z parzystymi liczbami:", liczbyParzyste)
