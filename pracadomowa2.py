@@ -46,18 +46,39 @@ else:
 #### Zad6. ####
 print("\n Zadanie 6 \n")
 
-lista = [0]*3
-lista[0] = int(input("Podaj pierwszą liczbę: "))
-lista[1] = int(input("Podaj pierwszą liczbę: "))
-lista[2] = int(input("Podaj pierwszą liczbę: "))
+a = int(input("Podaj pierwszą liczbę: "))
+b = int(input("Podaj drugą liczbę: "))
+c = int(input("Podaj trzecią liczbę: "))
+lista1 = [a,b,c]
+for liczba in lista1:
+    if a < b:
+        a=b
+        for liczba in lista1:
+           if b<c:
+                a=c
+print("\nNajwiększą liczbą jest:", a)
 
-for a in lista:
-    if lista[0] < lista[1]:
-        lista[0]=lista[1]
-        for b in lista:
-            if lista[1]<lista[2]:
-                lista[0]=lista[2]
-    else:
-        if lista[0] < lista[2]:
-            lista[0] = lista[2]
-print("\nNajwiększą liczbą jest:", lista[0])
+#### Zad7. ####
+print("\n Zadanie 7 \n")
+
+lista2 = [1,2,3,3.5,4.5,5.6]
+for element in lista2:
+    print(math.pow(element, 2))
+
+#### Zad8. ####
+print("\n Zadanie 8 \n")
+
+liczby=[0]*10
+n=0
+
+while n<10:
+    liczby[n]=int(input("Podaj " +str(n+1)+ " liczbę:"))
+    n+=1
+print(liczby)
+
+n=0
+while n<10:
+    if liczby[n] %2 == 0:
+        liczby.remove(liczby[n])
+    n+=1
+print(liczby)
