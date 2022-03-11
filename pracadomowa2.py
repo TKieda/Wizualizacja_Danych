@@ -83,3 +83,14 @@ while x<10:
         liczbyParzyste.append(liczby2[x])
     x+=1
 print("Tablica tylko z parzystymi liczbami:", liczbyParzyste)
+
+#### Zad9. ####
+print("\n Zadanie 9 \n")
+
+k=int(input("Podaj liczbę: "))
+try:
+    print("wynik: ", math.sqrt(k))
+
+except:
+    if k<0:
+        print("Liczba nie może być ujemna.")
