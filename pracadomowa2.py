@@ -69,16 +69,17 @@ for element in lista2:
 print("\n Zadanie 8 \n")
 
 liczby=[0]*10
+liczbyParzyste=[]
 n=0
 
 while n<10:
     liczby[n]=int(input("Podaj " +str(n+1)+ " liczbę:"))
     n+=1
-print(liczby)
+print("Tablica ze wszystkimi liczbami", liczby)
 
-n=0
-while n<10:
-    if liczby[n] %2 == 0:
-        liczby.remove(liczby[n])
-    n+=1
-print(liczby)
+x=0
+while x<10:
+    if liczby[x]%2==0:
+        liczbyParzyste.append(liczby[x])
+    x+=1
+print("Tablica tylko z parzystymi liczbami:", liczbyParzyste)
