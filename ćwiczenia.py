@@ -206,3 +206,18 @@ print(sys.version)
 #
 # lista2 = [i for i in liczby2 if i % 2 == 0]
 # print(lista2)
+
+# Przykład czwarty związany ze zamianą klucza z wartością w słowniku
+#wersja z pętlą
+skroty = {"PZU": "Państwowy zakład ubezpieczeń",
+"ZUS": "Zaklad ubezpieczeń społecznych",
+"PKO": "Państwowa kasa oszczędności"}
+print(skroty)
+odwrocone = {}
+for key,value in skroty.items():
+    odwrocone[value] = key
+print(odwrocone)
+#wersja z python comprehension
+odwrocone2 = {value: key for key, value in skroty.items()}
+print(odwrocone2)
+
