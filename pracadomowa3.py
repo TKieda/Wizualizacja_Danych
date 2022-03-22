@@ -55,3 +55,12 @@ print(trojkat(1,2,3))
 ##### Zad5 #####
 print("\nZadanie 5\n")
 
+def trapez(a=2,b=1,h=3):
+     p=((a + b) * h) / 2
+     return p
+print(trapez())
+
+##### Zad6 #####
+print("\nZadanie 6\n")
+
+def ciag(a=1, b=4, ile=10):
