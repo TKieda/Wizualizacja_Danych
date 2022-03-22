@@ -63,11 +63,24 @@ print(trapez())
 ##### Zad6 #####
 print("\nZadanie 6\n")
 
-def ciag(a1=1, b=4, ile=10):
-     tab = []
-     for wynik in range(0,ile,1):
-          wynik=a1*b
-          a1 += 1
-          tab.append(wynik)
-     print(tab)
-print(ciag())
+# def ciag(a1 = 1, b = 4, ile = 10):
+#      ciag = []
+#      for wynik in range(0, ile, 1):
+#           wynik = a1 * b
+#           a1 += 1
+#           ciag.append(wynik)
+#      print(ciag)
+# print(ciag())
+
+##### Zad7 #####
+print("\nZadanie 7\n")
+
+def ciag2(* ile):
+     ciag2 = []
+     b = 4
+     for i in ile:
+          wynik = i * b
+          ciag2.append(wynik)
+          i += 1
+     return ciag2
+print(ciag2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))

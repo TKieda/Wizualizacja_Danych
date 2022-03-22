@@ -209,15 +209,33 @@ print(sys.version)
 
 # Przykład czwarty związany ze zamianą klucza z wartością w słowniku
 #wersja z pętlą
-skroty = {"PZU": "Państwowy zakład ubezpieczeń",
-"ZUS": "Zaklad ubezpieczeń społecznych",
-"PKO": "Państwowa kasa oszczędności"}
-print(skroty)
-odwrocone = {}
-for key,value in skroty.items():
-    odwrocone[value] = key
-print(odwrocone)
-#wersja z python comprehension
-odwrocone2 = {value: key for key, value in skroty.items()}
-print(odwrocone2)
+# skroty = {"PZU": "Państwowy zakład ubezpieczeń",
+# "ZUS": "Zaklad ubezpieczeń społecznych",
+# "PKO": "Państwowa kasa oszczędności"}
+# print(skroty)
+# odwrocone = {}
+# for key,value in skroty.items():
+#     odwrocone[value] = key
+# print(odwrocone)
+# #wersja z python comprehension
+# odwrocone2 = {value: key for key, value in skroty.items()}
+# print(odwrocone2)
+
+# Symbol * oznacza dowolną ilość argumentów przechowywanych w krotce
+def ciag(* liczby):
+# jeżeli nie ma argumentów to
+    if len(liczby) == 0:
+        return 0
+    else:
+        suma = 0
+#sumujemy elementy ciągu
+    for i in liczby:
+        suma += i
+#zwracamy wartość sumy
+    return suma
+
+#wywołanie gdy nie ma argumentów
+print(ciag())
+#podajemy argumenty
+print(ciag(1, 2, 3.5, 4, 5, 6, 7, 8))
 
