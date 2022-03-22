@@ -63,4 +63,8 @@ print(trapez())
 ##### Zad6 #####
 print("\nZadanie 6\n")
 
-def ciag(a=1, b=4, ile=10):
+def ciag(a1=1, b=4, ile=10):
+     for wynik in range(a1,ile,1):
+          wynik=a1*b
+          print(wynik)
+print(ciag())
