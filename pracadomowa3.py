@@ -1,6 +1,6 @@
 import random
 import math
-
+import sys
 #########LAB 3##########
 
 
@@ -84,3 +84,20 @@ def ciag2(* ile):
           i += 1
      return ciag2
 print(ciag2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+##### Zad8 #####
+print("\nZadanie 8\n")
+
+def zakupy(** lista):
+     wartosc = 0
+     for i in lista:
+          wartosc += lista[i]
+     print("W koszyku znajdują się",len(lista),"przedmioty o łącznej wartości", wartosc,end=".")
+zakupy(karta_graficzna=3500, procesor=1500, plyta_glowna=600, pamiec_ram=400)
+
+##### Zad9 #####
+print("\nZadanie 9\n")
+
+def ciag_a(a1 = 1, b = 4, ile = 10):
+
+def ciag_g(a1 = 1, b = 4, ile = 10):

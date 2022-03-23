@@ -222,20 +222,27 @@ print(sys.version)
 # print(odwrocone2)
 
 # Symbol * oznacza dowolną ilość argumentów przechowywanych w krotce
-def ciag(* liczby):
-# jeżeli nie ma argumentów to
-    if len(liczby) == 0:
-        return 0
-    else:
-        suma = 0
-#sumujemy elementy ciągu
-    for i in liczby:
-        suma += i
-#zwracamy wartość sumy
-    return suma
+# def ciag(* liczby):
+# # jeżeli nie ma argumentów to
+#     if len(liczby) == 0:
+#         return 0
+#     else:
+#         suma = 0
+# #sumujemy elementy ciągu
+#     for i in liczby:
+#         suma += i
+# #zwracamy wartość sumy
+#     return suma
+#
+# #wywołanie gdy nie ma argumentów
+# print(ciag())
+# #podajemy argumenty
+# print(ciag(1, 2, 3.5, 4, 5, 6, 7, 8))
 
-#wywołanie gdy nie ma argumentów
-print(ciag())
-#podajemy argumenty
-print(ciag(1, 2, 3.5, 4, 5, 6, 7, 8))
-
+def to_lubie(** rzeczy):
+    for cos in rzeczy:
+        print("To jest ")
+        print(cos)
+        print(" co lubie ")
+        print(rzeczy[cos])
+to_lubie(slodycze="czekolada", rozrywka=['gry', 'filmy'])
