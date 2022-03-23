@@ -98,6 +98,4 @@ zakupy(karta_graficzna=3500, procesor=1500, plyta_glowna=600, pamiec_ram=400)
 ##### Zad9 #####
 print("\nZadanie 9\n")
 
-def ciag_a(a1 = 1, b = 4, ile = 10):
-
-def ciag_g(a1 = 1, b = 4, ile = 10):
+import ciagi

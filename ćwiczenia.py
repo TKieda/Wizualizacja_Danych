@@ -246,3 +246,4 @@ def to_lubie(** rzeczy):
         print(" co lubie ")
         print(rzeczy[cos])
 to_lubie(slodycze="czekolada", rozrywka=['gry', 'filmy'])
+
