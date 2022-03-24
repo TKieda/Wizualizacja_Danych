@@ -36,7 +36,7 @@ print("\nZadanie 3\n")
 
 slownik1 = {"czekolada":"szt", "pomidory":"kg", "woda":"l", "ziemniaki":"kg", "bułki":"szt", "jajka":"szt"}
 print(slownik1)
-slownik2 = {value: key for key, value in slownik1.items() if value == "szt" }
+slownik2 = {key: value for key, value in slownik1.items() if value == "szt" }
 print(slownik2)
 
 ##### Zad4 #####
