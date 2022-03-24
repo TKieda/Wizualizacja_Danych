@@ -97,4 +97,5 @@ zakupy(karta_graficzna=3500, procesor=1500, plyta_glowna=600, pamiec_ram=400)
 ##### Zad9 #####
 print("\n\nZadanie 9\n")
 
-import ciagi
+import ciagi.ciag_a
+import ciagi.ciag_g
