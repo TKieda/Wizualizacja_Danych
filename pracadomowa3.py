@@ -60,27 +60,32 @@ print(trapez())
 
 ##### Zad6 #####
 print("\nZadanie 6\n")
-def ciag_a(a1=1, b=4, ile=10):
+# def ciag_a(a1=1, b=4, ile=10):
+#     ciag = []
+#     for wynik in range(0, ile, 1):
+#         wynik = a1 * b
+#         a1 += 1
+#         ciag.append(wynik)
+#     return ciag
+# print(ciag_a())
+
+def ciag_g(a=1, b=4, ile=10):
     ciag = []
-    for wynik in range(0, ile, 1):
-        wynik = a1 * b
-        a1 += 1
+    wynik=a
+    for i in range(0,ile,1):
+        wynik=wynik*b
         ciag.append(wynik)
     return ciag
-print(ciag_a())
+print(ciag_g())
 
 ##### Zad7 #####
 print("\nZadanie 7\n")
 
-def ciag2(* ile):
+def ciag_g2(* ile):
      ciag2 = []
-     b = 4
-     for i in ile:
-          wynik = i * b
-          ciag2.append(wynik)
-          i += 1
-     return ciag2
-print(ciag2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+     return ciag_g2
+
 
 ##### Zad8 #####
 print("\nZadanie 8\n")
@@ -99,7 +104,7 @@ import ciagi.ciag_g
 
 ##### Zad10 #####
 print("\n\nZadanie 10\n")
-
+print("Zapisano do pliku wygenerowane liczby podzielne przez 4")
 
 lista = []
 for x in range(0, 100, 1):
@@ -114,5 +119,5 @@ txt.close()
 ##### Zad11 #####
 print("\n\nZadanie 11\n")
 txt = open("generator.txt","r")
-print(txt.read())
+print("Odczytane liczby z pliku:", txt.read())
 txt.close()
