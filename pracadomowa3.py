@@ -73,11 +73,15 @@ print(ciag_g())
 ##### Zad7 #####
 print("\nZadanie 7\n")
 
-def ciag_g2(* ile):
+def ciag2(* ile):
      ciag2 = []
-
-     return ciag_g2
-
+     b = 4
+     for i in ile:
+          wynik = i * b
+          ciag2.append(wynik)
+          i += 1
+     return ciag2
+print(ciag2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
 ##### Zad8 #####
 print("\nZadanie 8\n")
