@@ -43,7 +43,6 @@ print(slownik2)
 print("\nZadanie 4\n")
 
 def trojkat(a,b,c):
-
      if pow(a,2)+pow(b,2)==pow(c,2):
           print("Trójkąt jest prostokątny")
      else:
@@ -97,3 +96,23 @@ zakupy(karta_graficzna=3500, procesor=1500, plyta_glowna=600, pamiec_ram=400)
 print("\n\nZadanie 9\n")
 
 import ciagi.ciag_g
+
+##### Zad10 #####
+print("\n\nZadanie 10\n")
+
+
+lista = []
+for x in range(0, 100, 1):
+    if x % 4 == 0 and x!=0:
+        lista.append(x)
+
+txt = open("generator.txt", "w")
+txt.writelines(str(lista))
+txt.close()
+
+
+##### Zad11 #####
+print("\n\nZadanie 11\n")
+txt = open("generator.txt","r")
+print(txt.read())
+txt.close()
