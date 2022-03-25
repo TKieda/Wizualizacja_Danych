@@ -1,6 +1,6 @@
 import sys as system
 import math
-
+#########LAB 2##########
 #### Zad1. ####
 print("\n Zadanie 1 \n")
 

@@ -1,5 +1,5 @@
 import math
-
+#########LAB 1##########
 #### Zad1. ####
 print("\n Zadanie 1 \n")
 
