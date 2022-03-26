@@ -1,4 +1,4 @@
-import decimal
+
 import math
 ######Zestaw A######
 
