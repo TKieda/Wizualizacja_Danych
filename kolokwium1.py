@@ -18,8 +18,8 @@ for i in lista1:
     else:
         lista3.append(i)
 
-print(lista2)
-print(lista3)
+print(len(lista2))
+print(len(lista3))
 print("\n")
 
 ######Zad 3######
@@ -39,5 +39,8 @@ print("\n")
 
 ######Zad 4######
 print("Zadanie 4")
-l=int(input("Podaj liczbę w systemie dziesiętnym:"))
-print(oct(l))
+l=int(input("Podaj liczbę w systemie dziesiętnym: "))
+try:
+    print("Convert...:",oct(l))
+except ValueError:
+    print("To nie jest liczba w systemie dziesiętnym")
