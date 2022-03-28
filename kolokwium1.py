@@ -4,7 +4,7 @@ import math
 ######Zad 1######
 
 print("Zadanie 1")
-wynik=math.pow(math.sqrt(5/36),1/5)+math.e**5+math.cos(15)**2
+wynik=math.pow(5/36,1/5)+math.e**5+math.cos(15)**2
 print(round(wynik,2))
 print("\n")
 ######Zad 2######
