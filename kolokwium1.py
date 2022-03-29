@@ -17,7 +17,6 @@ for i in lista1:
         lista2.append(i)
     else:
         lista3.append(i)
-
 print(len(lista2))
 print(len(lista3))
 print("\n")

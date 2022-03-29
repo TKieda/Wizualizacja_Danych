@@ -239,11 +239,26 @@ print(sys.version)
 # #podajemy argumenty
 # print(ciag(1, 2, 3.5, 4, 5, 6, 7, 8))
 
-def to_lubie(** rzeczy):
-    for cos in rzeczy:
-        print("To jest ")
-        print(cos)
-        print(" co lubie ")
-        print(rzeczy[cos])
-to_lubie(slodycze="czekolada", rozrywka=['gry', 'filmy'])
+# def to_lubie(** rzeczy):
+#     for cos in rzeczy:
+#         print("To jest ")
+#         print(cos)
+#         print(" co lubie ")
+#         print(rzeczy[cos])
+# to_lubie(slodycze="czekolada", rozrywka=['gry', 'filmy'])
+
+
+print("Sortowanie")
+tab = [0]*3
+for t in range(0,3,1):
+    tab[t]=int(input("Podaj " +str(t+1)+ " liczbę:"))
+print(tab)
+
+for i in range(0,2,1):
+    for j in range(0,2,1):
+        if tab[j]>tab[j+1]:
+            pom=tab[j+1]
+            tab[j+1]=tab[j]
+            tab[j]=pom
+print(tab)
 
