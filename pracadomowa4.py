@@ -29,5 +29,4 @@ print("\nZadanie 4\n")
 def potega(i,j):
     pot = np.logspace(1, j, num=j, base=i, dtype=int)
     return pot
-
 print(potega(2, 4))
