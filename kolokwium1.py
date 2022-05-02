@@ -1,4 +1,5 @@
 import math
+
 ######Zestaw A######
 
 ######Zad 1######
@@ -38,8 +39,9 @@ print("\n")
 
 ######Zad 4######
 print("Zadanie 4")
-l=int(input("Podaj liczbę w systemie dziesiętnym: "))
+
 try:
-    print("Convert...:",oct(l))
+    l = int(input("Podaj liczbę w systemie dziesiętnym: "))
+    print("Convert...:", oct(l))
 except ValueError:
     print("To nie jest liczba w systemie dziesiętnym")

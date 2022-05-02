@@ -1,4 +1,5 @@
 import sys
+import numpy as np
 import math
 import random
 
@@ -248,17 +249,108 @@ print(sys.version)
 # to_lubie(slodycze="czekolada", rozrywka=['gry', 'filmy'])
 
 
-print("Sortowanie")
-tab = [0]*3
-for t in range(0,3,1):
-    tab[t]=int(input("Podaj " +str(t+1)+ " liczbę:"))
-print(tab)
+# print("Sortowanie")
+# tab = [0]*3
+# for t in range(0,3,1):
+#     tab[t]=int(input("Podaj " +str(t+1)+ " liczbę:"))
+# print(tab)
+#
+# for i in range(0,2,1):
+#     for j in range(0,2,1):
+#         if tab[j]>tab[j+1]:
+#             pom=tab[j+1]
+#             tab[j+1]=tab[j]
+#             tab[j]=pom
+# print(tab)
 
-for i in range(0,2,1):
-    for j in range(0,2,1):
-        if tab[j]>tab[j+1]:
-            pom=tab[j+1]
-            tab[j+1]=tab[j]
-            tab[j]=pom
-print(tab)
 
+
+# a=np.array([1,2,3], dtype='float64')
+# print(a)
+# a=np.arange(1,5,0.5)
+# print(a)
+# print(a.dtype) # typ tablicy
+# print(type(a))
+# print(a.shape) # rozmiar tablicy
+# print(a.ndim) # ilowymiarowa
+#
+# b = np.array([np.arange(2), np.arange(2)])
+# print(b)
+# print(b.shape)
+# print(b.ndim)
+
+# z = np.zeros((5,5), dtype='int32') # tablica z samymi zerami
+# print(z)
+# print(z.dtype)
+# j = np.ones((5,5)) # tablica z samymi jedynkami
+# print(j)
+# p = np.empty((2,2), dtype='int32')
+# print(p)
+#
+# p[1][1] = 2
+# print(p)
+#
+# a = np.linspace(1, 2, 5, endpoint=False) # pięcioelementowa tablica z pominięciem wartości 2
+# print(a)
+#
+# b, c = np.indices((5, 5)) # wartość po kolumnach
+# #print(b[0][1][1])
+# print(b)
+# print(c)
+# d,e = np.mgrid[0:5, 0:5] # watrość po wierszach
+#
+# print(d)
+# print(e)
+#
+# f= np.diag([x for x in range(5)],k=-1) # wektor po przekątnej 5x5, wartość k zmienia wektor tworząc przy tym nowy wiersz
+# print(f)
+#
+# g=np.fromiter(range(5), dtype='int')
+# print(g)
+
+# marcin = 'Marcin'
+# marcin = b'Marcin'
+# mar = np.frombuffer(marcin, dtype='S6')
+# print(mar)
+
+# mar_1 = np.array(list(marcin))
+# print(mar_1)
+# mar_2 = np.array(list(b'Marcin')) # kod ASCI
+# print(mar_2)
+# mar_3 = np.fromiter(marcin, dtype='S1')
+# mar_4 = np.fromiter(marcin, dtype='U1')
+# print(mar_3)
+# print(mar_4)
+#
+# a = np.ones((2,2))
+# b = np.ones((2,2))
+# c = a + b
+# print(a)
+# print(b)
+# print(c)
+#
+# a = np.arange(10)
+# print(a)
+# s = slice(2,7,2)
+# print(a[s])
+# s = range(2,7,2)
+# print(a[s])
+#
+# print(a[2:7:2])
+# print(a[1:5])
+
+# a = np.arange(25)
+# mat = a.reshape((5,5))
+# print(a)
+# print(mat)
+# print(mat[1:, 1:])
+# print(mat[:, 1:2])
+# print(mat[2:5, 1:3])
+
+a = np.array([[1,2,3], [4,5,6], [7,8,9],[10,11,12]])
+print(a)
+
+rows = np.array([[0, 0], [3, 3]])
+cols = np.array([[0, 2], [0, 2]])
+b=a[rows, cols]
+print(b)
