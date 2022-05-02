@@ -309,7 +309,7 @@ print(sys.version)
 # print("Wartość wybrana po indeksie:",c[3][2])
 
 # print("\nTablica 5x5 (2 wiersze(0:2), 5 kolumn(0:5))")
-# d,e = np.mgrid[0:2, 0:5] # watrość po wierszach
+# d,e = np.mgrid[1:2, 1:5] # watrość po wierszach
 # print(d)
 # print(e)
 
@@ -321,19 +321,19 @@ print(sys.version)
 # g=np.fromiter(range(5), dtype='int')
 # print(g)
 
-marcin = 'Marcin'
-marcin = b'Marcin'
-mar = np.frombuffer(marcin, dtype='S6')
-print(mar)
-
-mar_1 = np.array(list(marcin))
-print(mar_1)
-mar_2 = np.array(list(b'Marcin')) # kod ASCI
-print(mar_2)
-mar_3 = np.fromiter(marcin, dtype='S1')
-mar_4 = np.fromiter(marcin, dtype='U1')
-print(mar_3)
-print(mar_4)
+# marcin = 'Marcin'
+# marcin = b'Marcin'
+# mar = np.frombuffer(marcin, dtype='S6')
+# print(mar)
+#
+# mar_1 = np.array(list(marcin))
+# print(mar_1)
+# mar_2 = np.array(list(b'Marcin')) # kod ASCI
+# print(mar_2)
+# mar_3 = np.fromiter(marcin, dtype='S1')
+# mar_4 = np.fromiter(marcin, dtype='U1')
+# print(mar_3)
+# print(mar_4)
 
 # a = np.ones((2,2))
 # b = np.ones((2,2))

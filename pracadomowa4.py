@@ -11,12 +11,14 @@ print("\nZadanie 2\n")
 a = np.array([1.2, 4.332, 7.4])
 print("Typ tablicy a to:", a.dtype)
 print(a,"\n")
-b=np.array(a, dtype='int64')
+b=a.astype('int64')
 print("Typ tablicy a po przekonwertowaniu to:",b.dtype)
 print(b)
 #### Zad 3 ####
 print("\nZadanie 3\n")
 
 def tab(n):
-    n= input("Podaj wielkosc tablicy: ")
-    tab = np.array()
+    tablica = np.arange(1, n*n+1)
+    tablica = tablica.reshape((n,n))
+    return tablica
+print(tab(7))
