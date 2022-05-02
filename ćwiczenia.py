@@ -263,10 +263,10 @@ print(sys.version)
 #             tab[j]=pom
 # print(tab)
 
+###########Numpy, tablice itd.###################
 
-
-# a=np.array([1,2,3], dtype='float64')
-# print(a)
+a=np.array([1,2,3], dtype='float64')
+print(a)
 # a=np.arange(1,5,0.5)
 # print(a)
 # print(a.dtype) # typ tablicy
@@ -284,8 +284,8 @@ print(sys.version)
 # print(z.dtype)
 # j = np.ones((5,5)) # tablica z samymi jedynkami
 # print(j)
-# p = np.empty((2,2), dtype='int32')
-# print(p)
+p = np.empty((2,2), dtype='int32')
+print(p)
 #
 # p[1][1] = 2
 # print(p)
@@ -347,10 +347,10 @@ print(sys.version)
 # print(mat[:, 1:2])
 # print(mat[2:5, 1:3])
 
-a = np.array([[1,2,3], [4,5,6], [7,8,9],[10,11,12]])
-print(a)
-
-rows = np.array([[0, 0], [3, 3]])
-cols = np.array([[0, 2], [0, 2]])
-b=a[rows, cols]
-print(b)
+# a = np.array([[1,2,3], [4,5,6], [7,8,9],[10,11,12]])
+# print(a)
+#
+# rows = np.array([[0, 0], [3, 3]])
+# cols = np.array([[0, 2], [0, 2]])
+# b=a[rows, cols]
+# print(b)
