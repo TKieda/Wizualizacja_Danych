@@ -50,10 +50,3 @@ slowo1 = slowo1.reshape((1,5))
 print(slowo1)
 
 
-#### Zad 7 ####
-print("\nZadanie 7\n")
-
-def tab(n):
-    a = np.arange(2, n, 2).reshape(n,n)
-    return a
-print(tab(10))
