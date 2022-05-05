@@ -145,6 +145,8 @@ import random
 # print(lista)
 # print(len(lista))
 # lista.insert(3, 'abc') # dodanie argumentu do konkretnego miejsca listy
+# del lista['key3']   # usunięcie elementu za pomocą 'del'
+# lista.pop('key4')
 # print(lista)
 # print(len(lista))
 
