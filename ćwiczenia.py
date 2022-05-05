@@ -3,7 +3,7 @@ import numpy as np
 import math
 import random
 
-print(sys.version)
+# print(sys.version)
 #
 # a=15123
 # b='Tomek'
@@ -367,3 +367,47 @@ print(sys.version)
 # cols = np.array([[0, 2], [0, 2]])
 # b=a[rows, cols]
 # print(b)
+
+#Kolos 1#
+print("\n")
+a = math.pow(5/35,1/5)+pow(math.e,5)+pow(math.cos(15),2)
+print(a.__round__(2))
+
+#Kolos 2#
+print("\n")
+b=[1,2,3,4,0.5,1.5,2.5]
+c=[]
+d=[]
+print(b)
+for n in b:
+    if n % 1 == 0:
+        c.append(n)
+    if n % 1 != 0:
+        d.append(n)
+print(len(c))
+print(len(d))
+
+#Kolos 3#
+print("\n")
+
+def lista(lista4=[1,2,3,4,"a","b","c","d"]):
+    lista5=[]
+    for i in lista4:
+        try:
+            int(i)
+            lista5.append(i)
+        except:
+            str(i)
+    print(lista5)
+    return lista5
+print("Suma cyfr z listy wynosi:",sum(lista()))
+print("\n")
+
+#Kolos 4#
+print("\n")
+
+try:
+     l = int(input("Podaj liczbę w systemie dziesiętnym: "))
+     print("Convert...:", oct(l))
+except ValueError:
+     print("To nie jest liczba w systemie dziesiętnym")

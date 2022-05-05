@@ -32,3 +32,28 @@ def potega(i,j):
     pot = np.logspace(1, j, num=j, base=i, dtype=int)
     return pot
 print(potega(2, 4))
+
+#### Zad 5 ####
+print("\nZadanie 5\n")
+
+def diag(z):
+    wek = np.flip(np.diag(np.arange(1, z + 1)))
+    return wek
+print(diag(5))
+
+#### Zad 6 ####
+print("\nZadanie 6\n")
+
+slowo = 'slowo'
+slowo1 = np.fromiter(slowo,dtype='U1')
+slowo1 = slowo1.reshape((1,5))
+print(slowo1)
+
+
+#### Zad 7 ####
+print("\nZadanie 7\n")
+
+def tab(n):
+    a = np.arange(2, n, 2).reshape(n,n)
+    return a
+print(tab(10))
