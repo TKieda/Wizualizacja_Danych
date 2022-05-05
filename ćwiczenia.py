@@ -464,13 +464,13 @@ import random
 ####Zad 4
 
 
-try:
-    a = int(input("Podaj liczbę a "))
-    b = int(input("Podaj liczbę b "))
-    lista = []
-    for i in range(a, b, 2):
-        lista.append(i ** 2)
-    print(lista)
-except:
-    print("Podany niepoprawny typ danych")
+# try:
+#     a = int(input("Podaj liczbę a "))
+#     b = int(input("Podaj liczbę b "))
+#     lista = []
+#     for i in range(a, b, 2):
+#         lista.append(i ** 2)
+#     print(lista)
+# except:
+#     print("Podany niepoprawny typ danych")
 
