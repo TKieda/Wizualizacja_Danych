@@ -448,7 +448,29 @@ import random
 # print(slownik())
 # print("\n")
 
+# s = {2 : 12, 'a' : 'b', 'c' : 2.3, 4 : 10}
+# def slownik(s):
+#     lista =[]
+#     for x in s:
+#         if (type(x) == int):
+#             if (type(s[x] == int)):
+#                 lista.append(x)
+#                 lista.append(s[x])
+#     return lista
+# print(slownik(s))
+
+
+
 ####Zad 4
 
 
+try:
+    a = int(input("Podaj liczbę a "))
+    b = int(input("Podaj liczbę b "))
+    lista = []
+    for i in range(a, b, 2):
+        lista.append(i ** 2)
+    print(lista)
+except:
+    print("Podany niepoprawny typ danych")
 
