@@ -411,3 +411,42 @@ import random
 #      print("Convert...:", oct(l))
 # except ValueError:
 #      print("To nie jest liczba w systemie dziesiętnym")
+
+# nowa_lista = [1,2,3,4,5]
+# moja_lista[:3] – elementy od pierwszego (domyślnie jeśli nie podano) do trzeciego: [1,2,3]
+# moja_lista[2:] – od trzeciego do ostatniego [3,4,5]
+# moja_lista[:] – wszystkie elementy listy [1,2,3,4,5]
+# moja_lista[-2:] – dwa ostatnie elementy [4,5]
+# moja_lista[:-1] – od pierwszego do przedostatniego [1,2,3,4]
+# moja_lista[3:-3] – od czwartego do czwartego od końca [3]
+# moja_lista[::2] – Wyświetl wszystko, ale co drugi element listy [1,3,5]
+# moja_list[::-1] – odwrócenie kolejności listy – wyświetlenie elementów od końca do początku [5, 4, 3, 2, 1]
+
+###Zad 2
+
+a=math.log(3,27)+math.pow(8/26+math.sin(50),1/3)
+print(a.__round__(3))
+
+###Zad 3
+lista=[4,3,5,2,1,2,4,6,3,2,7,7]
+lista2=[]
+
+for x in lista[1::2]:
+    if x%2==0:
+        lista2.append(x)
+print(lista2)
+print(len(lista2))
+
+####Zad 1
+def slownik(s={1.1:1,3:4.1,5:6,7:0}):
+    list=[]
+    for key, value in s.items():
+         if key%1==0 and value%1==0:
+            list.append(key)
+            list.append(value)
+    return list
+print(slownik())
+print("\n")
+
+
+
