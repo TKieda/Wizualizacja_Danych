@@ -466,3 +466,44 @@ import random
 # except:
 #     print("Podany niepoprawny typ danych")
 
+###Zad.1
+print("Zadanie 1")
+wyr = math.pow(5/9,2)+math.pow(math.log10(23+math.sin(45)),1/4)
+print(wyr.__round__(2))
+
+###Zad.2
+print("\nZadanie 2\n")
+lista=[3,2,3,4,5,4,4,2,2]
+listamin=[]
+for i in lista:
+    if min(lista)==i:
+        listamin.append(i)
+print("Najmniejsza liczba z listy to:",min(lista))
+print("Najmniejszych liczb listy jest:",len(listamin))
+
+###Zad.3
+print("\nZadanie 3\n")
+
+def fun(lista2=[1,2,3,'a','b',1.2]):
+    znaki = []
+    for i in lista2:
+        if type(i)==str:
+            znaki.append(i)
+    return znaki
+print(fun())
+
+
+### Zad.4
+print("Zadanie 4\n")
+try:
+    a = int(input("Podaj a:"))
+    lista3 = [1, 2, 3, 4, 5]
+    lista4 = []
+    for i in lista3:
+        if a>i:
+            lista4.append(i)
+except ValueError:
+    print("To nie jest liczba")
+
+print(lista4)
+print("Liczb mniejszych od a jest:",len(lista4))
