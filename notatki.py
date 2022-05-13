@@ -379,3 +379,21 @@ import random
 # cols = np.array([[0, 2], [0, 2]])
 # b=a[rows, cols]
 # print(b)
+
+# d= math.pow(math.log(5+math.pow(math.sin(8),2)),1/6)
+
+# lista10=[1,2,3,'a','b','c']
+# lista11=[]
+# lista12=[]
+#
+# for z in lista10:
+#     if type(z)== int:
+#         lista11.append(z)
+#     else:
+#         lista12.append(z)
+# print(lista11)
+# print(lista12)
+#
+# print("Liczb jest:", len(lista11))
+# print("Liczb jest:", len(lista12))
+

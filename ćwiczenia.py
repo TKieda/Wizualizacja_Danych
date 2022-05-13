@@ -466,44 +466,165 @@ import random
 # except:
 #     print("Podany niepoprawny typ danych")
 
+############################### POPRAWKA 22.05 ##########################################
+
+######## Zestaw A #######
+
+# ###Zad.1
+# print("Zadanie 1")
+# wyr = math.pow(5/9,2)+math.pow(math.log(23+math.sin(45)),1/4)
+# print(wyr.__round__(2))
+#
+# ###Zad.2
+# print("\nZadanie 2\n")
+# lista=[3,2,3,4,5,4,4,2,2]
+# listamin=[]
+# for i in lista:
+#     if min(lista)==i:
+#         listamin.append(i)
+# print("Najmniejsza liczba z listy to:",min(lista))
+# print("Najmniejszych liczb listy jest:",len(listamin))
+#
+# ###Zad.3
+# print("\nZadanie 3\n")
+#
+# def fun(lista2=[1,2,3,'a','b',1.2]):
+#     znaki = []
+#     for i in lista2:
+#         if type(i)==str:
+#             znaki.append(i)
+#     return znaki
+# print(fun())
+#
+#
+# ### Zad.4
+# print("Zadanie 4\n")
+# try:
+#     a = int(input("Podaj a:"))
+#     lista3 = [1, 2, 3, 4, 5]
+#     lista4 = []
+#     for i in lista3:
+#         if a>i:
+#             lista4.append(i)
+#     print("Liczb mniejszych od a jest:", len(lista4))
+# except ValueError:
+#     print("To nie jest liczba")
+
+######## Zestaw A1 #######
+
+###Zad.1
+# print("Zadanie 1")
+#
+# wyr = math.pow(5/36,1/5)+math.pow(math.e,5)+math.pow(math.cos(15),2)
+# print(wyr.__round__(2))
+#
+# ###Zad.2
+# print("Zadanie 2")
+#
+# lista = [1,2,3.4,5.6,3.47,8,9]
+# zp = []
+# c = []
+# for x in lista:
+#     if type(x)==int:
+#         c.append(x)
+#     elif type(x)==float:
+#         zp.append(x)
+# print(len(c))
+# print(len(zp))
+#
+# ###Zad.3
+# print("Zadanie 3")
+
+# lista = [1,2,3,4,'s','d','r']
+# l = []
+# def fun(lista):
+#     l = []
+#     for x in lista:
+#         if type(x)==int:
+#             l.append(x)
+#     return sum(l)
+# print(fun(lista))
+#
+# ###Zad.4
+# print("Zadanie 4")
+#
+# try:
+#     d = int(input("Podaj liczbę w systemie dziesiętnym:"))
+#     print(oct(d))
+# except ValueError:
+#     print("To nie jest liczba.")
+
+######## Zestaw A2 #######
+
+###Zad.1
+# print("Zadanie 1")
+#
+# s={1.1:1,3:4.1,5:6,7:0,'a':2,9:8}
+#
+# def slownik(s):
+#     list=[]
+#     for key, value in s.items():
+#             if type(key)==int and type(value)==int:
+#                 list.append(key)
+#                 list.append(value)
+#     return list
+# print(slownik(s))
+# print("\n")
+#
+# ###Zad.2
+# print("Zadanie 2")
+#
+# wyr = math.log(27,3)+math.pow(8/26+math.sin(50),1/3)
+# print(wyr.__round__(3))
+#
+# ###Zad.3
+# print("Zadanie 3")
+#
+# l = [1,2,2,4,5,6]
+# parz = []
+# for x in l[1::2]:
+#     if x%2==0:
+#         parz.append(x)
+# print(len(parz))
+#
+# ###Zad.4
+# print("Zadanie 4")
+#
+# try:
+#     l = []
+#     a=int(input("Podaj a:"))
+#     b=int(input("Podaj b:"))
+#     for x in range(a,b,2):
+#         l.append(x**2)
+#     print(l)
+# except ValueError:
+#     print("To nie jest liczba całkowita.")
+
+
+######## Zestaw B #######
+
 ###Zad.1
 print("Zadanie 1")
-wyr = math.pow(5/9,2)+math.pow(math.log10(23+math.sin(45)),1/4)
+
+wyr = math.pow(math.sin(65)+math.pow(4/5,2),1/4)
 print(wyr.__round__(2))
 
 ###Zad.2
-print("\nZadanie 2\n")
-lista=[3,2,3,4,5,4,4,2,2]
-listamin=[]
-for i in lista:
-    if min(lista)==i:
-        listamin.append(i)
-print("Najmniejsza liczba z listy to:",min(lista))
-print("Najmniejszych liczb listy jest:",len(listamin))
+print("Zadanie 2")
 
-###Zad.3
-print("\nZadanie 3\n")
 
-def fun(lista2=[1,2,3,'a','b',1.2]):
-    znaki = []
-    for i in lista2:
-        if type(i)==str:
-            znaki.append(i)
-    return znaki
+def fun(lista = [1,2,3,'a','s','g',1.2,4.5]):
+
+    for x in lista:
+        if type(x)==int or type(x)==float:
+            l.append(x)
+        elif type(x)==str:
+            z.append(x)
+    return len(z) and len(l)
 print(fun())
 
 
-### Zad.4
-print("Zadanie 4\n")
-try:
-    a = int(input("Podaj a:"))
-    lista3 = [1, 2, 3, 4, 5]
-    lista4 = []
-    for i in lista3:
-        if a>i:
-            lista4.append(i)
-except ValueError:
-    print("To nie jest liczba")
-
-print(lista4)
-print("Liczb mniejszych od a jest:",len(lista4))
+###Zad.3
+# print("Zadanie 3")
+#
+# s = {'a':'v', 1:2, 4:'d','b':5}
