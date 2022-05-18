@@ -263,111 +263,6 @@ import random
 #             tab[j]=pom
 # print(tab)
 
-###########Numpy, tablice itd.###################
-
-# a=np.array([1,2,3], dtype='float64')
-# print("Typ float", a)
-# b=np.array([1,2,3], dtype='int32')
-# print("Typ int", b)
-# a=np.arange(1,5,0.5)
-# print("Tablica zaczynająca się od 1, mająca 5 elementów i zmieniająca się o 0.5",a)
-# print("Wypisanie typu tablicy:", a.dtype) # typ tablicy
-# #print(type(a))
-# print("Rozmiar tablicy:", a.shape) # rozmiar tablicy
-# print("Iluwymiarowa tablica:", a.ndim) # ilowymiarowa
-#
-# print("\nTablica 2x2:")
-# b = np.array([np.arange(2), np.arange(2)])
-# print(b)
-# print("Rozmiar:", b.shape)
-# print("Wymiar:", b.ndim)
-#
-#
-# print("\nTablica z samymi zerami:")
-# z = np.zeros((5,5), dtype='int32') # tablica z samymi zerami
-# print(z)
-# print("\nTablica z samymi jedynkami:")
-# j = np.ones((5,5)) # tablica z samymi jedynkami
-# print(j)
-# print("\nTablica z przypadkowymi wartościami:")
-# p = np.empty((2,2), dtype='int32')
-# print(p)
-#
-# print("\nTablica 2x2 gdzie we wskazanym miejscu na tablicy wstawiono cyfrę 2:")
-# p[1][0] = 2
-# print(p)
-#
-# print("\nPięcioelementowa tablica z pominięciem wartości 2")
-# a = np.linspace(1, 2, 5, endpoint=False) # pięcioelementowa tablica z pominięciem wartości 2
-# print(a)
-
-# print("\nTablica 5x3 (5 wierszy, 3 kolumny)")
-# b, c = np.indices((5,3)) # wartość po kolumnach
-# print(b)
-# print(c)
-# print("Wartość wybrana po indeksie:",b[3][2])
-# print("Wartość wybrana po indeksie:",c[3][2])
-
-# print("\nTablica 5x5 (2 wiersze(0:2), 5 kolumn(0:5))")
-# d,e = np.mgrid[1:2, 1:5] # watrość po wierszach
-# print(d)
-# print(e)
-
-# print("\nWektor po przekątnej 4x4, wartość k zmienia wektor tworząc przy tym nowy wiersz.")
-# f= np.diag([x for x in range(4)],k=0) #
-# print(f)
-
-# print("\nTablica pięcioelementowa.")
-# g=np.fromiter(range(5), dtype='int')
-# print(g)
-
-# marcin = 'Marcin'
-# marcin = b'Marcin'
-# mar = np.frombuffer(marcin, dtype='S6')
-# print(mar)
-#
-# mar_1 = np.array(list(marcin))
-# print(mar_1)
-# mar_2 = np.array(list(b'Marcin')) # kod ASCI
-# print(mar_2)
-# mar_3 = np.fromiter(marcin, dtype='S1')
-# mar_4 = np.fromiter(marcin, dtype='U1')
-# print(mar_3)
-# print(mar_4)
-
-# a = np.ones((2,2))
-# b = np.ones((2,2))
-# c = a + b
-# print(a)
-# print(b)
-# print(c)
-#
-# a = np.arange(10)
-# print(a)
-# s = slice(2,7,2)
-# print(a[s])
-# s = range(2,7,2)
-# print(a[s])
-#
-# print(a[2:7:2])
-# print(a[1:5])
-#
-# a = np.arange(25)
-# mat = a.reshape((5,5))
-# print(a)
-# print(mat)
-# print(mat[1:, 1:])
-# print(mat[:, 1:2])
-# print(mat[2:5, 1:3])
-#
-# a = np.array([[1,2,3], [4,5,6], [7,8,9],[10,11,12]])
-# print(a)
-#
-# rows = np.array([[0, 0], [3, 3]])
-# cols = np.array([[0, 2], [0, 2]])
-# b=a[rows, cols]
-# print(b)
-
 # #Kolos 1#
 # print("\n")
 # a = math.pow(5/35,1/5)+pow(math.e,5)+pow(math.cos(15),2)
@@ -623,8 +518,278 @@ import random
 #     return len(z) and len(l)
 # print(fun())
 
+###########Numpy, tablice itd.###################
 
-###Zad.3
-# print("Zadanie 3")
+# a=np.array([1,2,3], dtype='float64')
+# print("Typ float", a)
+# b=np.array([1,2,3], dtype='int32')
+# print("Typ int", b)
+# a=np.arange(1,5,0.5)
+# print("Tablica zaczynająca się od 1, mająca 5 elementów i zmieniająca się o 0.5",a)
+# print("Wypisanie typu tablicy:", a.dtype) # typ tablicy
+# #print(type(a))
+# print("Rozmiar tablicy:", a.shape) # rozmiar tablicy
+# print("Iluwymiarowa tablica:", a.ndim) # ilowymiarowa
 #
-# s = {'a':'v', 1:2, 4:'d','b':5}
+# print("\nTablica 2x2:")
+# b = np.array([np.arange(2), np.arange(2)])
+# print(b)
+# print("Rozmiar:", b.shape)
+# print("Wymiar:", b.ndim)
+#
+#
+# print("\nTablica z samymi zerami:")
+# z = np.zeros((5,5), dtype='int32') # tablica z samymi zerami
+# print(z)
+# print("\nTablica z samymi jedynkami:")
+# j = np.ones((5,5)) # tablica z samymi jedynkami
+# print(j)
+print("\nTablica z przypadkowymi wartościami:")
+p = np.empty((2,2), dtype='int32')
+print(p)
+#
+# print("\nTablica 2x2 gdzie we wskazanym miejscu na tablicy wstawiono cyfrę 2:")
+# p[1][0] = 2
+# print(p)
+#
+# print("\nPięcioelementowa tablica z pominięciem wartości 2")
+# a = np.linspace(1, 2, 5, endpoint=False) # pięcioelementowa tablica z pominięciem wartości 2
+# print(a)
+
+# print("\nTablica 5x3 (5 wierszy, 3 kolumny)")
+# b, c = np.indices((5,3)) # wartość po kolumnach
+# print(b)
+# print(c)
+# print("Wartość wybrana po indeksie:",b[3][2])
+# print("Wartość wybrana po indeksie:",c[3][2])
+
+# print("\nTablica 5x5 (2 wiersze(0:2), 5 kolumn(0:5))")
+# d,e = np.mgrid[1:2, 1:5] # watrość po wierszach
+# print(d)
+# print(e)
+
+# print("\nWektor po przekątnej 4x4, wartość k zmienia wektor tworząc przy tym nowy wiersz.")
+# f= np.diag([x for x in range(4)],k=0) #
+# print(f)
+
+# print("\nTablica pięcioelementowa.")
+# g=np.fromiter(range(5), dtype='int')
+# print(g)
+
+# marcin = 'Marcin'
+# marcin = b'Marcin'
+# mar = np.frombuffer(marcin, dtype='S6')
+# print(mar)
+#
+# mar_1 = np.array(list(marcin))
+# print(mar_1)
+# mar_2 = np.array(list(b'Marcin')) # kod ASCI
+# print(mar_2)
+# mar_3 = np.fromiter(marcin, dtype='S1')
+# mar_4 = np.fromiter(marcin, dtype='U1')
+# print(mar_3)
+# print(mar_4)
+
+# a = np.ones((2,2))
+# b = np.ones((2,2))
+# c = a + b
+# print(a)
+# print(b)
+# print(c)
+#
+# a = np.arange(10)
+# print(a)
+# s = slice(2,7,2)
+# print(a[s])
+# s = range(2,7,2)
+# print(a[s])
+#
+# print(a[2:7:2])
+# print(a[1:5])
+#
+# a = np.arange(25)
+# mat = a.reshape((5,5))
+# print(a)
+# print(mat)
+# print(mat[1:, 1:])
+# print(mat[:, 1:2])
+# print(mat[2:5, 1:3])
+#
+# a = np.array([[1,2,3], [4,5,6], [7,8,9],[10,11,12]])
+# print(a)
+#
+# rows = np.array([[0, 0], [3, 3]])
+# cols = np.array([[0, 2], [0, 2]])
+# b=a[rows, cols]
+# print(b)
+
+# a= np.array([20,30,40,50])
+# b= np.arange(4)
+#
+# c=a+b
+# print(c)
+# d=np.sqrt(b)
+# print(d)
+#
+# e= d + c
+# print(e)
+
+# a=np.arange(12).reshape((3,4))
+# print(a)
+# print(a.sum())
+# print(a.sum(axis=0))
+# print(a.sum(axis=1))
+# print(a.cumsum(axis=1))
+# a=np.arange(3)
+# b=np.arange(3)
+# print(np.dot(a,b))
+# print(a.dot(b))
+#
+# c=np.arange(3)
+# d=np.array([[0],[1],[2]])
+# print(c.dot(d))
+# e = np.array([[2,4,5],[5,1,7]])
+# f=np.array([[2,3],[4,2],[6,1]])
+# print(np.dot(e,f))
+
+
+# a=np.arange(6).reshape((3,2))
+# print(a)
+# print(a.flat)
+# for b in a:
+#     print(b)
+#     #for c in b:
+#    #     print(c)
+
+# a = np.arange(12).reshape((3,4)) # iloczyn w reshape musi być równy arange
+# print(a)
+# b = a.reshape((4,3))
+# print(b)
+#
+# c = b.ravel() # zmiana do jednowymiarowej
+# print(c)
+# print(b.T)
+
+
+###############Pandas########################
+
+# s = pd.Series([1,3,5,'a',5.5])
+# print(s)
+# s = pd.Series([10,12,14,8], index=['a','b','c','d']) #index - sami tworzymy etykiety
+# print(s)
+#
+# data = {'Kraj':['Belgia', 'Indie','Brazylia'],'Stolica':['Bruksela','New Delphi','Brasilia'],'Populacja':[1234534,12314454,1232345]}
+# df = pd.DataFrame(data)
+# print(df)
+
+# daty = pd.date_range('20220507', periods=5)
+# print(daty)
+# df2 = pd.DataFrame(np.random.randn(5,4), index=daty,columns=list('ABCD'))
+# print(df2)
+#
+# df3 = pd.read_csv('dane.csv', header=0, sep=';',decimal='.') # wczytuje plik csv, wczyta 5 pierwszych i 5 ostatnich, header określa gdzie jest nagłówek i gdzie zaczynają się dane
+# print(df3)
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytule plik excel
+# df = pd.read_excel(xlsx, header=0)
+# print(df)
+# print(df.head(10)) # czyta pierwsze 10 danych
+# print(df.tail(10)) # czyta ostatnie 10 danych
+#
+# df3.to_csv('dane2.csv', index=False) # zapis do pliku csv
+# df.to_excel('imiona2.xlsx', sheet_name='dane') # zapis do pliku excel
+
+# s = pd.Series([10,12,14,8], index=['a','b','c','d']) #index - sami tworzymy etykiety
+# print(s)
+#
+# data = {'Kraj':['Belgia', 'Indie','Brazylia'],'Stolica':['Bruksela','New Delphi','Brasilia'],'Populacja':[1234534,12314454,1232345]}
+# df = pd.DataFrame(data)
+# print(df)
+#
+# xlsx =pd.ExcelFile('imiona.xlsx')
+# df4 = pd.read_excel(xlsx, header=0)
+# print(df4)
+# print(df4.head(10))
+# print(df4.tail(10))
+# print(df.sample())
+# print(df.sample(10, replace=True))
+
+
+# print(s['a'])
+# print(s.a)
+#
+# print(df[0:1])
+#
+# print(df['Kraj'])
+# print(df.Kraj)
+# print(df.iloc[[0],[0]])
+# print(df.loc[[0],['Kraj']])
+# print(df.at[0,'Kraj'])
+
+# print(s['a']) # indeksy
+# print(s.a)
+# print(df['Kraj'])
+# print(df.Kraj)
+# ##odwołania do odpowiednich wierszy i kolumn
+# print(df[0:1])
+# print(df.iloc[[0],[0]])
+# print(df.loc[[0],['Kraj']])
+# print(df.at[0,'Kraj'])
+#
+# print(s[s>9])
+# print(s.where(s>10, 'warunek niespełniony'))
+# seria = s.copy()
+# seria.where(s>10, 'warunek niespełniony', inplace=True)
+# print(seria)
+# print(s[(s>13) & (s > 8)])
+#
+# print(df[df["Populacja"]>12000000])
+# print(df[(df['Populacja']>1000000) & (df.index.isin([0,2]))])
+
+# s['e'] = 14
+# print(s)
+# df.loc[3] = 'nowy element'
+# print(df)
+# df.loc[4] = ['Polska', 'Warszawa', 38000000]
+# print(df)
+#
+# new_df = df.drop([3])
+# print(new_df)
+# df.drop([3], inplace=True)
+# print(df)
+#
+# df['Kontynent'] = ['Europa', 'Azja', 'Ameryka Południowa', 'Europa'] # nowa kolumna
+# print(df)
+#
+# df.sort_values('Stolica', inplace=True) # sortowanie bez indeksów
+# print(df)
+
+#grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
+# print(grupa.get_group('Europa'))
+#
+# print(df.groupby('Kontynent').agg({'Populacja':[sum]}))
+
+#matplotlib 3.5.1
+
+# grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
+# grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Populacja w mld', rot=0, title='Populacja na kontynentach', legend=True)
+
+# wykres = grupa.plot.bar()
+# wykres.set_xlabel('Kontynenty')
+# wykres.set_ylabel('Populacja w mld')
+# wykres.tick_params(axis='x', labelrotation=0)
+# wykres.set_title('Populacja na kontynentach')
+# plt.show()
+
+# grupa = df3.groupby('Imię i nazwisko').agg({'Wartość zamówienia':['sum']})
+# print(grupa)
+# grupa.plot(kind='pie', subplots=True, autopct='%.2f %%', fontsize=20, figsize=(8,6), colors=['red','green'], legend=(3,0))
+# plt.legend(loc='upper left')
+# plt.savefig('plot.png')
+# plt.show()
+
+# seria = pd.Series(np.random.randn(1000))
+# seria = seria.cumsum()
+# print(seria)
+#
+# seria.plot()
+# plt.show()
