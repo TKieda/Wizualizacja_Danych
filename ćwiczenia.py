@@ -604,24 +604,24 @@ import random
 ######## Zestaw B #######
 
 ###Zad.1
-print("Zadanie 1")
+# print("Zadanie 1")
+#
+# wyr = math.pow(math.sin(65)+math.pow(4/5,2),1/4)
+# print(wyr.__round__(2))
+#
+# ###Zad.2
+# print("Zadanie 2")
 
-wyr = math.pow(math.sin(65)+math.pow(4/5,2),1/4)
-print(wyr.__round__(2))
 
-###Zad.2
-print("Zadanie 2")
-
-
-def fun(lista = [1,2,3,'a','s','g',1.2,4.5]):
-
-    for x in lista:
-        if type(x)==int or type(x)==float:
-            l.append(x)
-        elif type(x)==str:
-            z.append(x)
-    return len(z) and len(l)
-print(fun())
+# def fun(lista = [1,2,3,'a','s','g',1.2,4.5]):
+#
+#     for x in lista:
+#         if type(x)==int or type(x)==float:
+#             l.append(x)
+#         elif type(x)==str:
+#             z.append(x)
+#     return len(z) and len(l)
+# print(fun())
 
 
 ###Zad.3
