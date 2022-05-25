@@ -544,9 +544,9 @@ import random
 # print("\nTablica z samymi jedynkami:")
 # j = np.ones((5,5)) # tablica z samymi jedynkami
 # print(j)
-print("\nTablica z przypadkowymi wartościami:")
-p = np.empty((2,2), dtype='int32')
-print(p)
+# print("\nTablica z przypadkowymi wartościami:")
+# p = np.empty((2,2), dtype='int32')
+# print(p)
 #
 # print("\nTablica 2x2 gdzie we wskazanym miejscu na tablicy wstawiono cyfrę 2:")
 # p[1][0] = 2
