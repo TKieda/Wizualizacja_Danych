@@ -26,3 +26,6 @@ print("\nZadanie 3\n")
 
 df = pd.read_csv('zamowienia.csv', header=0, sep=";",decimal=',') # wczytanie csv
 print(df)
+
+# listę unikalnych nazwisk sprzedawców (przetwarzając zwróconą pojedynczą kolumnę z DataFrame) ???
+print(df.sort_values(by='Utarg', ascending=True).head(5)) # 5 najwyższych wartości zamówień
