@@ -21,5 +21,5 @@ print(df.groupby(['Rok','Imie']).agg({'Liczba':['max']}))
 # najbardziej popularne imię dziewczynki i chłopca w całym danym okresie ???
 
 
-#### Zad 2 ####
-print("\nZadanie 2\n")
+#### Zad 3 ####
+print("\nZadanie 3\n")
