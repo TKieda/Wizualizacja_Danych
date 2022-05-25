@@ -64,13 +64,28 @@ import  math
 #
 # print(g+h)
 #
-# #### Zad 8 ####
+#### Zad 8 ####
 # print("\nZadanie 8\n")
+#
+# i = np.array([[3,4,63], [24,5,16], [27,58,69]])
+# for x in i:
+#     print(x)
 
 #### Zad 9 ####
-print("\nZadanie 9\n")
+# print("\nZadanie 9\n")
+#
+# j = np.array([[3,4,63], [24,5,16], [27,58,69]])
+#
+# for x in j.flat:
+#     print("Element tablicy: ", x)
 
-i = np.array([[3,4,63], [24,5,16], [27,58,69]])
+#### Zad 10 ####
+# print("\nZadanie 10\n")
+#
+# k = np.random.randint(0,99,81).reshape((9,9))
+# print(k)
+# print(k.reshape((27,3)))
 
-for x in i.flat:
-    print("Element tablicy: ", x)
+#### Zad 11 ####
+# print("\nZadanie 11\n")
+
