@@ -87,5 +87,11 @@ import  math
 # print(k.reshape((27,3)))
 
 #### Zad 11 ####
-# print("\nZadanie 11\n")
+print("\nZadanie 11\n")
 
+l = np.random.randint(0,99,12).reshape((3,4))
+print(l.flat)
+m = l.reshape((4,3))
+print(m.flat)
+n = l.reshape((2,6))
+print(n.flat)
