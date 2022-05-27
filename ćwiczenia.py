@@ -2,6 +2,8 @@ import sys
 import numpy as np
 import math
 import random
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # print(sys.version)
 #
@@ -793,3 +795,30 @@ import random
 #
 # seria.plot()
 # plt.show()
+
+#########Wykresy podstawy ############
+
+# ts = pd.Series(np.random.randn(1000))
+# ts = ts.cumsum() # funkcja biblioteki pandas generująca skumulowaną sumę kolejnych elementów
+# print(ts)
+# ts.plot()
+# plt.show()
+
+
+########DataFrame###########
+
+data = {'Kraj': ['Belgia', 'Indie', 'Brazylia', 'Polska'], 'Stolica': ['Bruksela', 'New Delhi', 'Brasilia', 'Warszawa'], 'Kontynent': ['Europa', 'Azja', 'Ameryka Południowa', 'Europa'], 'Populacja': [11190846, 1303171035, 207847528, 38675467]}
+df = pd.DataFrame(data)
+print(df)
+grupa = df.groupby(['Kontynent']).agg({'Populacja':['sum']})
+print(grupa) #
+# grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Mld', rot=0, legend=True, title='Populacja z podzałem na kontynenty')
+wykres = grupa.plot.bar()
+wykres.set_ylabel("Mld")
+wykres.set_xlabel('Kontynent')
+wykres.tick_params(axis='x', labelrotation=0)
+wykres.legend()
+wykres.set_title('Populacja z podzałem na kontynenty')
+#plt.xticks(rotation=0)  #zmiana kierunku tekstu etykiet słupków #
+plt.savefig('wykres.png')
+plt.show()
