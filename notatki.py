@@ -545,11 +545,11 @@ import matplotlib.pyplot as plt
 
 ###Histogram#####
 
-x = np.random.randn(10000)
-
-plt.hist(x,bins=50, facecolor='g', alpha=0.75, density=True)
-
-plt.xlabel('Wartości')
-plt.ylabel('Prawdopodobieństwa')
-plt.title('Histogram')
-plt.show()
+# x = np.random.randn(10000)
+#
+# plt.hist(x,bins=50, facecolor='g', alpha=0.75, density=True)
+#
+# plt.xlabel('Wartości')
+# plt.ylabel('Prawdopodobieństwa')
+# plt.title('Histogram')
+# plt.show()
