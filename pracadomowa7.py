@@ -101,4 +101,4 @@ import matplotlib.pyplot as plt
 # plt.title("Ilość złożonych zamówień przez poszczególnych sprzedawców")
 # #plt.figure(figsize=(5,4)) # wielkość wykresu ??
 # plt.subplots_adjust(left=0.1, right=0.9, bottom=0.2, top=0.9)
-# plt.show()
+plt.show()
