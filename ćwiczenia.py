@@ -819,7 +819,7 @@ import matplotlib.pyplot as plt
 # wykres.tick_params(axis='x', labelrotation=0)
 # wykres.legend()
 # wykres.set_title('Populacja z podzałem na kontynenty')
-# #plt.xticks(rotation=0)  #zmiana kierunku tekstu etykiet słupków #
+# #plt.xticks(rotation=0)  #zmiana kierunku tekstu etykiet słupków
 # plt.savefig('wykres.png')
 # plt.show()
 

@@ -4,6 +4,7 @@ import math
 import random
 from PIL import Image
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # print(sys.version)
 #
@@ -401,15 +402,15 @@ import matplotlib.pyplot as plt
 
 #######matplotlib 3.5.1
 
-# grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
-# grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Populacja w mld', rot=0, title='Populacja na kontynentach', legend=True)
+grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
+grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Populacja w mld', rot=0, title='Populacja na kontynentach', legend=True)
 
-# wykres = grupa.plot.bar()
-# wykres.set_xlabel('Kontynenty')
-# wykres.set_ylabel('Populacja w mld')
-# wykres.tick_params(axis='x', labelrotation=0)
-# wykres.set_title('Populacja na kontynentach')
-# plt.show()
+wykres = grupa.plot.bar()
+wykres.set_xlabel('Kontynenty')
+wykres.set_ylabel('Populacja w mld')
+wykres.tick_params(axis='x', labelrotation=0)
+wykres.set_title('Populacja na kontynentach')
+plt.show()
 
 # grupa = df3.groupby('Imię i nazwisko').agg({'Wartość zamówienia':['sum']})
 # print(grupa)
@@ -477,7 +478,7 @@ import matplotlib.pyplot as plt
 #
 # y1=np.sin(2*np.pi*x1)
 # y2=np.cos(2*np.pi*x2)
-
+#
 # plt.subplot(2,1,1)
 # plt.plot(x1, y1)
 # plt.ylabel('sin(x)')
@@ -497,8 +498,8 @@ import matplotlib.pyplot as plt
 # y1=np.sin(2*np.pi*x1)
 # y2=np.cos(2*np.pi*x2)
 # fig, axs = plt.subplots(3,2) # trzy wiersze, dwie kolumny
-# # print(type(fig))
-# # print(type(axs))
+# print(type(fig))
+# print(type(axs))
 #
 # axs[0,0].plot(x1,y1, 'g-')
 # axs[0,0].set_xlabel('x')
