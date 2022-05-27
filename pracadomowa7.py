@@ -89,16 +89,16 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #### Zad 4 ####
-print("\nZadanie 4\n")
-
-df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal='.')
-grupa = df.groupby('Sprzedawca').size()
-print(grupa)
-
-wykres = grupa.plot.bar(ylabel='Ilość zamówień', xlabel='Sprzedawca',alpha=0.5) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
-wykres.legend().remove() # remove - wyłącza legendę
-#plt.xticks(rotation=0)
-plt.title("Ilość złożonych zamówień przez poszczególnych sprzedawców")
-#plt.figure(figsize=(5,4)) # wielkość wykresu ??
-plt.subplots_adjust(left=0.1, right=0.9, bottom=0.2, top=0.9)
-plt.show()
+# print("\nZadanie 4\n")
+#
+# df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal='.')
+# grupa = df.groupby('Sprzedawca').size()
+# print(grupa)
+#
+# wykres = grupa.plot.bar(ylabel='Ilość zamówień', xlabel='Sprzedawca',alpha=0.5) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
+# wykres.legend().remove() # remove - wyłącza legendę
+# #plt.xticks(rotation=0)
+# plt.title("Ilość złożonych zamówień przez poszczególnych sprzedawców")
+# #plt.figure(figsize=(5,4)) # wielkość wykresu ??
+# plt.subplots_adjust(left=0.1, right=0.9, bottom=0.2, top=0.9)
+# plt.show()
