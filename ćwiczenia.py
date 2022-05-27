@@ -837,11 +837,11 @@ import matplotlib.pyplot as plt
 #################zmodyfikowana wersja wykresu pierwszego z dodatkowym wykresem średniej kroczącej##################
 
 
-ts = pd.Series(np.random.randn(1000)) #korzystając z funkcji random oraz data_range możemy wygenerować szereg czasowy danych
-ts = ts.cumsum() #funkcja biblioteki pandas generująca skumulowaną sumę kolejnych elementów
-df = pd.DataFrame(ts, columns=['wartości']) #rzutowanie Series na DataFrame
-print(df)
-df['Średnia krocząca'] = df.rolling(window=50).mean() # dodanie nowej kolumny i wykorzystanie funkcji rolling do stworzenia kolejnych wartości średniej kroczącej
-df.plot()
-plt.legend()
-plt.show()
+# ts = pd.Series(np.random.randn(1000)) #korzystając z funkcji random oraz data_range możemy wygenerować szereg czasowy danych
+# ts = ts.cumsum() #funkcja biblioteki pandas generująca skumulowaną sumę kolejnych elementów
+# df = pd.DataFrame(ts, columns=['wartości']) #rzutowanie Series na DataFrame
+# print(df)
+# df['Średnia krocząca'] = df.rolling(window=50).mean() # dodanie nowej kolumny i wykorzystanie funkcji rolling do stworzenia kolejnych wartości średniej kroczącej
+# df.plot()
+# plt.legend()
+# plt.show()
