@@ -402,15 +402,15 @@ import pandas as pd
 
 #######matplotlib 3.5.1
 
-grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
-grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Populacja w mld', rot=0, title='Populacja na kontynentach', legend=True)
-
-wykres = grupa.plot.bar()
-wykres.set_xlabel('Kontynenty')
-wykres.set_ylabel('Populacja w mld')
-wykres.tick_params(axis='x', labelrotation=0)
-wykres.set_title('Populacja na kontynentach')
-plt.show()
+# grupa = df.groupby('Kontynent').agg({'Populacja':[sum]})
+# grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Populacja w mld', rot=0, title='Populacja na kontynentach', legend=True)
+#
+# wykres = grupa.plot.bar()
+# wykres.set_xlabel('Kontynenty')
+# wykres.set_ylabel('Populacja w mld')
+# wykres.tick_params(axis='x', labelrotation=0)
+# wykres.set_title('Populacja na kontynentach')
+# plt.show()
 
 # grupa = df3.groupby('Imię i nazwisko').agg({'Wartość zamówienia':['sum']})
 # print(grupa)
