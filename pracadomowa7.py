@@ -23,13 +23,28 @@ print("\nZadanie 1\n")
 
 ###Wykres kolumnowy###
 
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+# df = pd.read_excel(xlsx, header=0)
+# roczniki = df['Rok'].unique()
+# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+# print(grupa)
+# wykres = grupa.plot.barh(ylabel='Liczba urodzeń', xlabel='Lata',alpha=0.5) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
+# wykres.legend().remove() # remove - wyłącza legendę
+# # plt.xticks(rotation=0)
+# plt.title("Liczba urodzeń w latach 2000-2017")
+# plt.show()
+
+
+###Histogram - tylko brzydki...###
+
 xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
 df = pd.read_excel(xlsx, header=0)
 roczniki = df['Rok'].unique()
 grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
 print(grupa)
-wykres = grupa.plot.barh(ylabel='Liczba urodzeń', xlabel='Lata',alpha=0.5) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
-wykres.legend().remove() # remove - wyłącza legendę
-# plt.xticks(rotation=0)
-plt.title("Liczba urodzeń w latach 2000-2017")
+
+plt.hist(grupa,bins=50, facecolor='g', alpha=0.75, density=True)
+plt.xlabel('Lata')
+plt.ylabel('Liczba urodzeń')
+plt.title('Histogram')
 plt.show()
