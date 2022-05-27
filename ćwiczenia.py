@@ -805,20 +805,43 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
-########DataFrame###########
+########Wykres kolumnowy z Pandas DataFrame###########
 
-data = {'Kraj': ['Belgia', 'Indie', 'Brazylia', 'Polska'], 'Stolica': ['Bruksela', 'New Delhi', 'Brasilia', 'Warszawa'], 'Kontynent': ['Europa', 'Azja', 'Ameryka Południowa', 'Europa'], 'Populacja': [11190846, 1303171035, 207847528, 38675467]}
-df = pd.DataFrame(data)
+# data = {'Kraj': ['Belgia', 'Indie', 'Brazylia', 'Polska'], 'Stolica': ['Bruksela', 'New Delhi', 'Brasilia', 'Warszawa'], 'Kontynent': ['Europa', 'Azja', 'Ameryka Południowa', 'Europa'], 'Populacja': [11190846, 1303171035, 207847528, 38675467]}
+# df = pd.DataFrame(data)
+# print(df)
+# grupa = df.groupby(['Kontynent']).agg({'Populacja':['sum']})
+# print(grupa) #
+# # grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Mld', rot=0, legend=True, title='Populacja z podzałem na kontynenty')
+# wykres = grupa.plot.bar()
+# wykres.set_ylabel("Mld")
+# wykres.set_xlabel('Kontynent')
+# wykres.tick_params(axis='x', labelrotation=0)
+# wykres.legend()
+# wykres.set_title('Populacja z podzałem na kontynenty')
+# #plt.xticks(rotation=0)  #zmiana kierunku tekstu etykiet słupków #
+# plt.savefig('wykres.png')
+# plt.show()
+
+########Wczytanie danych z pliku i wyświetlenie zgrupowanych wartości###########
+
+# df = pd.read_csv('dane.csv', header=0, sep=";", decimal=".")
+# print(df)
+# grupa = df.groupby(['Imię i nazwisko']).agg({'Wartość zamówienia':["sum"]})
+# grupa.plot(kind='pie', subplots=True, autopct='%.2f %%', fontsize=20, figsize=(6,6), colors=['red', 'green']) # wykres kolumnowy z wartościami procentowymi sformatowanymi z dokładnością do 2 miejsc po przecinku #figsize ustawia wielkość wykresu w calach, domyślnie [6.4, 4.8]
+# # wykres = grupa.plot.pie(subplots=True,autopct='%.2f %%', fontsize=20, figsize=(6,6))
+# plt.legend(loc="lower right")
+# plt.title('Suma zamówienia dla sprzedawcy')
+# plt.show()
+
+#################zmodyfikowana wersja wykresu pierwszego z dodatkowym wykresem średniej kroczącej##################
+
+
+ts = pd.Series(np.random.randn(1000)) #korzystając z funkcji random oraz data_range możemy wygenerować szereg czasowy danych
+ts = ts.cumsum() #funkcja biblioteki pandas generująca skumulowaną sumę kolejnych elementów
+df = pd.DataFrame(ts, columns=['wartości']) #rzutowanie Series na DataFrame
 print(df)
-grupa = df.groupby(['Kontynent']).agg({'Populacja':['sum']})
-print(grupa) #
-# grupa.plot(kind='bar', xlabel='Kontynent', ylabel='Mld', rot=0, legend=True, title='Populacja z podzałem na kontynenty')
-wykres = grupa.plot.bar()
-wykres.set_ylabel("Mld")
-wykres.set_xlabel('Kontynent')
-wykres.tick_params(axis='x', labelrotation=0)
-wykres.legend()
-wykres.set_title('Populacja z podzałem na kontynenty')
-#plt.xticks(rotation=0)  #zmiana kierunku tekstu etykiet słupków #
-plt.savefig('wykres.png')
+df['Średnia krocząca'] = df.rolling(window=50).mean() # dodanie nowej kolumny i wykorzystanie funkcji rolling do stworzenia kolejnych wartości średniej kroczącej
+df.plot()
+plt.legend()
 plt.show()
