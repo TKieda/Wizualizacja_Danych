@@ -4,8 +4,8 @@ import numpy as np
 #### Zad 1 ####
 # print("\nZadanie 1\n")
 
-xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
-df = pd.read_excel(xlsx, header=0)
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+# df = pd.read_excel(xlsx, header=0)
 # print(df)
 #
 # #### Zad 2 ####
@@ -35,7 +35,7 @@ df = pd.read_excel(xlsx, header=0)
 #### Zad 3 ####
 # print("\nZadanie 3\n")
 
-df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal='.') # wczytanie csv
+# df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal='.') # wczytanie csv
 
 # print(df['Sprzedawca'].unique()) # lista unikalnych nazwisk sprzedawców
 
