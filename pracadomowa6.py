@@ -6,7 +6,7 @@ import numpy as np
 
 xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
 df = pd.read_excel(xlsx, header=0)
-#print(df)
+# print(df)
 #
 # #### Zad 2 ####
 # print("\nZadanie 2\n")
