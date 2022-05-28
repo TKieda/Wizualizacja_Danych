@@ -554,3 +554,57 @@ import pandas as pd
 # plt.ylabel('Prawdopodobieństwa')
 # plt.title('Histogram')
 # plt.show()
+
+####Zadanie 1####
+
+# x = np.linspace(1,20,75) # od-do i ilość wartości
+# x1 = np.arange(1,21,1) # od-do+1 oraz krok
+# plt.plot(x,(1/x))
+# plt.xlabel('Od 1 do 20')
+# plt.ylabel('f(x)=1/x')
+# plt.title('Wykres')
+# plt.show()
+# print(x1)
+
+####Zadanie 2####
+####Pandas####
+
+###Wykres liniowy####
+
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+# df = pd.read_excel(xlsx, header=0)
+# roczniki = df['Rok'].unique()
+# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+# print(grupa)
+# wykres = grupa.plot()
+# wykres.set_ylabel('Liczba urodzonych dzieci')
+# wykres.set_xticks(roczniki)
+# wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+# wykres.legend()
+# plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+# plt.title("Liczba urodzonych dzieci dla każdego roku")
+# plt.show()
+
+###Wykres kolumnowy###
+
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+# df = pd.read_excel(xlsx, header=0)
+# roczniki = df['Rok'].unique() # obsługuje przypadki, w których nie jest posortowane lub ma zduplikowane wartości
+# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+# print(grupa)
+# wykres = grupa.plot.bar(ylabel='Liczba urodzeń', xlabel='Lata',alpha=0.5, figsize=(8,8) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
+# wykres.legend().remove() # remove - wyłącza legendę
+# plt.xticks(rotation=30)
+# plt.title("Liczba urodzeń w latach 2000-2017")
+# plt.figure(figsize=(20,10)) # wielkość wykresu
+# plt.show()
+
+###Wykres kołowy###
+# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+# df = pd.read_excel(xlsx, header=0)
+# roczniki = df['Rok'].unique()
+# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+# print(grupa)
+# grupa.plot(kind='pie', subplots=True, autopct='%.2f %%', fontsize=15, figsize=(10,10), legend=(3,0)) ## kind - rodzaj wykresu(bar:kolumnowy,barh:kolmnowy obrocony,pie:kołowy, plot:liniowy, scatter:rozproszony)
+# plt.legend().remove()
+# plt.show()
