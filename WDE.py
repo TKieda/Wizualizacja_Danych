@@ -65,3 +65,15 @@ import pandas as pd
 ##########Zestaw 2##############
 
 #######ZAD 1########
+
+# fig, (ax) = plt.subplots(figsize=(8,5.8))
+# x = np.arange(-7,7,0.1)
+# y= 20*np.sin(x)
+# y1=(2*x/5)-2
+# y2=7-x
+# ax.plot(x, y, 'r--',x,y1,'y--',x,y2,'g-')
+# ax.set(xticks=np.arange(-6,7, 2), yticks=np.arange(-30,31,10))
+# ax.legend(labels=['y=20*sin(x)', 'y=(2x/5)-2','y=7-x'], loc='lower left')
+# ax.set_title('Tytuł ABCD')
+# plt.show()
+
