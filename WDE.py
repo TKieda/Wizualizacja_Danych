@@ -20,15 +20,48 @@ import pandas as pd
 
 #######ZAD 2########
 
+# xlsx = pd.ExcelFile('odpady24.xlsx')
+# df = pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby('Rodzaje odpadów')['Wartość'].sum()
+# grupa.plot(kind='pie', fontsize=15, figsize=(10,10), legend=(5,5), explode=(0.2,0.2,0.2,0.2,0.2), label='')
+# plt.title('Info', fontsize=20)
+# plt.legend(loc='upper left')
+# plt.savefig('zad2.jpg')
+# plt.show()
 
 
+#######ZAD 3######## ???????????????
 
-xlsx = pd.ExcelFile('odpady24.xlsx')
-df = pd.read_excel(xlsx, header=0)
-print(df)
-grupa = df.groupby('Rodzaje odpadów')['Wartość'].sum()
-grupa.plot(kind='pie', autopct='%.2f %%', fontsize=15, figsize=(10,10), legend=(5,5), explode=(0.2,0.2,0.2,0.2,0.2), label='')
-plt.title('Info', fontsize=20)
-plt.legend(loc='upper left')
+# df = pd.read_csv('apteki24.csv', header=0, sep=";", decimal=".")
+# grupa = df('Nazwa').groupby(['Rok']==2017)
+# print(grupa)
+# grupa.plot(kind='bar', ylabel='Wartosc',xlabel='Nazwa', title='Wartosc aptek w 2017', legend=True)
+# plt.show()
 
+##########Zestaw 1##############
+
+#######ZAD 1########
+
+e=np.arange(0,5)
+
+x=[0,1,2,3,4]
+y=[101, 70, 75, 25, 50]
+y1=[20, 10, 30, 10, 0]
+
+l = np.arange(0, 6)
+w = np.full(6, 120)
+
+plt.title('Tytuł')
+plt.bar(x=e, height=y, color=['teal', 'darkgreen', 'darkkhaki', 'pink', 'lawngreen'])
+plt.bar(x=e, height=y1, color=['indigo', 'cyan', 'olive', 'blue', 'blue'])
+plt.plot(l, w, 'g')
+
+plt.axis([-0.60, 5.25, 0, 150])
+# plt.savefig('1.pdf', format='pdf')
 plt.show()
+
+
+##########Zestaw 2##############
+
+#######ZAD 1########
