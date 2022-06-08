@@ -5,30 +5,7 @@ import random
 from PIL import Image
 import matplotlib.pyplot as plt
 import pandas as pd
-##########Zestaw 24##############
 
-#######ZAD 1########
-
-# x=[1,5,6,7,8,9,12,14,16,19,20,21,22,23,26,28,30]
-# y=[0.167,0.1675,0.1675,0.1678,0.1677,0.1674,0.1673,0.1683,0.1688,0.1689,0.1693,0.1687,0.1692,0.1691,0.1692,0.1697,0.1695]
-# fig, ax = plt.subplots(figsize=(7.2,5.4))
-# ax.plot(x,y,'r--')
-# ax.set(xticks=np.arange(0,35, 5),yticks=np.arange(0.165,0.170,0.001), title='Wykres w sierpniu 2019')
-# plt.text(29, 0.1685 ,'CZK',verticalalignment='baseline',horizontalalignment='right')
-# ax.grid()
-# plt.show()
-
-#######ZAD 2########
-
-# xlsx = pd.ExcelFile('odpady24.xlsx')
-# df = pd.read_excel(xlsx, header=0)
-# print(df)
-# grupa = df.groupby('Rodzaje odpadów')['Wartość'].sum()
-# grupa.plot(kind='pie', fontsize=15, figsize=(10,10), legend=(5,5), explode=(0.2,0.2,0.2,0.2,0.2), label='')
-# plt.title('Info', fontsize=20)
-# plt.legend(loc='upper left')
-# plt.savefig('zad2.jpg')
-# plt.show()
 
 
 #######ZAD 3######## ???????????????
@@ -98,4 +75,56 @@ import pandas as pd
 # plt.legend(loc='upper left')
 # plt.ylim([0,100])
 # plt.grid()
+# plt.show()
+
+##########Zestaw 12##############
+
+#######ZAD 1########
+
+# n_groups = 3
+#
+# wartosci_nb=[6,33,1]
+# wartosci_pm=[8,28,3]
+#
+# labels=['Hiper markety','Super markety','Domy handolwe']
+# fig, ax = plt.subplots()
+# index = np.arange(n_groups)
+#
+# index = np.linspace(1,n_groups*1.2,n_groups)
+#
+# bar_width = 0.5
+# opacity = 0.4
+# plt.bar(index - bar_width/2, wartosci_nb, bar_width, label='Rok 2016')
+# plt.bar(index + bar_width/2 , wartosci_pm, bar_width, label='Rok 2017')
+# plt.xticks(index,labels)
+#
+# plt.legend(loc='upper right')
+#
+# plt.title("Informacje o sklepach")
+# plt.tight_layout()
+# plt.show()
+
+##########Zestaw 24##############
+
+#######ZAD 1########
+
+# x=[1,5,6,7,8,9,12,14,16,19,20,21,22,23,26,28,30]
+# y=[0.167,0.1675,0.1675,0.1678,0.1677,0.1674,0.1673,0.1683,0.1688,0.1689,0.1693,0.1687,0.1692,0.1691,0.1692,0.1697,0.1695]
+# fig, ax = plt.subplots(figsize=(7.2,5.4))
+# ax.plot(x,y,'r--')
+# ax.set(xticks=np.arange(0,35, 5),yticks=np.arange(0.165,0.170,0.001), title='Wykres w sierpniu 2019')
+# plt.text(29, 0.1685 ,'CZK',verticalalignment='baseline',horizontalalignment='right')
+# ax.grid()
+# plt.show()
+
+#######ZAD 2########
+
+# xlsx = pd.ExcelFile('odpady24.xlsx')
+# df = pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby('Rodzaje odpadów')['Wartość'].sum()
+# grupa.plot(kind='pie', fontsize=15, figsize=(10,10), legend=(5,5), explode=(0.2,0.2,0.2,0.2,0.2), label='')
+# plt.title('Info', fontsize=20)
+# plt.legend(loc='upper left')
+# plt.savefig('zad2.jpg')
 # plt.show()
