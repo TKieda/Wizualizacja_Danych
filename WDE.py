@@ -19,7 +19,7 @@ import pandas as pd
 ##########Zestaw 1##############
 
 #######ZAD 1########
-
+###Wykres kolumnowy jeden na drugim###
 # e=np.arange(0,5)
 #
 # x=[0,1,2,3,4]
@@ -33,7 +33,7 @@ import pandas as pd
 # plt.bar(x=e, height=y, color=['teal', 'darkgreen', 'darkkhaki', 'pink', 'lawngreen'])
 # plt.bar(x=e, height=y1, color=['indigo', 'cyan', 'olive', 'blue', 'blue'])
 # plt.plot(l, w, 'g')
-
+#
 # plt.axis([-0.60, 5.25, 0, 150])
 # plt.savefig('1.pdf', format='pdf')
 # plt.show()
@@ -42,6 +42,7 @@ import pandas as pd
 ##########Zestaw 2##############
 
 #######ZAD 1########
+###Wykres liniowy na trzy linie###
 
 # fig, (ax) = plt.subplots(figsize=(8,5.8))
 # x = np.arange(-7,7,0.1)
@@ -57,7 +58,7 @@ import pandas as pd
 ##########Zestaw 11##############
 
 #######ZAD 1########
-
+### Wykres liniowy na dwie linie###
 # labels=['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec']
 # values=[21,32,43,77,66,50]
 # values1=[50,42,38,22,24,30]
@@ -80,9 +81,8 @@ import pandas as pd
 ##########Zestaw 12##############
 
 #######ZAD 1########
-
+###Podwójny wykres kolumnowy###
 # n_groups = 3
-#
 # wartosci_nb=[6,33,1]
 # wartosci_pm=[8,28,3]
 #
@@ -104,12 +104,12 @@ import pandas as pd
 # plt.tight_layout()
 # plt.show()
 
-
 ##########Zestaw 21##############
 
 #######ZAD 1########
+
+###Podwójny wykres kolumnowy###
 # n_groups = 3
-#
 # wartosci_ryz=[3.75,3.85,3.9]
 # wartosci_marchew=[3.55,3.75,3.7]
 #
@@ -137,7 +137,7 @@ import pandas as pd
 ##########Zestaw 22##############
 
 #######ZAD 1########
-
+###Wykres kolumnowy###
 # names=['Piłka nożna','Koszykówka','Siatkówka','Golf','Lekkoatletyka','Inne']
 # percentages= [40, 29, 16, 1, 6,8]
 # plt.pie(percentages,labels=names,explode=(0.1,0,0,0,0,0),autopct='%.f%%')
@@ -147,7 +147,7 @@ import pandas as pd
 ##########Zestaw 24##############
 
 #######ZAD 1########
-
+###Wykres liniowy przerywany###
 # x=[1,5,6,7,8,9,12,14,16,19,20,21,22,23,26,28,30]
 # y=[0.167,0.1675,0.1675,0.1678,0.1677,0.1674,0.1673,0.1683,0.1688,0.1689,0.1693,0.1687,0.1692,0.1691,0.1692,0.1697,0.1695]
 # fig, ax = plt.subplots(figsize=(7.2,5.4))
