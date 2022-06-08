@@ -77,3 +77,25 @@ import pandas as pd
 # ax.set_title('Tytuł ABCD')
 # plt.show()
 
+##########Zestaw 11##############
+
+#######ZAD 1########
+
+# labels=['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec']
+# values=[21,32,43,77,66,50]
+# values1=[50,42,38,22,24,30]
+#
+# plt.plot(labels,values1,'b--',label="Filmy")
+# plt.plot(labels,values,"g",label="Gry")
+#
+#
+#
+# plt.xlabel('Miesiąc')
+# plt.ylabel('Zyski')
+# plt.title('Zyski z filmów i gier')
+#
+#
+# plt.legend(loc='upper left')
+# plt.ylim([0,100])
+# plt.grid()
+# plt.show()
