@@ -104,6 +104,46 @@ import pandas as pd
 # plt.tight_layout()
 # plt.show()
 
+
+##########Zestaw 21##############
+
+#######ZAD 1########
+# n_groups = 3
+#
+# wartosci_ryz=[3.75,3.85,3.9]
+# wartosci_marchew=[3.55,3.75,3.7]
+#
+# labels=['Maj','Maj','Czerwiec']
+# fig, ax = plt.subplots()
+# # index = np.arange(n_groups)
+#
+# index = np.linspace(1,n_groups*1.2,n_groups)
+#
+# bar_width = 0.5
+# opacity = 0.4
+#
+# plt.bar(index - bar_width/2, wartosci_ryz, bar_width, label='Ryż')
+# plt.bar(index + bar_width/2 , wartosci_marchew, bar_width, label='Marchew')
+# plt.xticks(index,labels,)
+#
+# plt.legend(loc='upper left')
+#
+# plt.title("Ceny wybranych produktów w 2019 roku")
+# plt.tight_layout()
+# plt.ylim([3.0,4.0])
+# plt.show()
+
+
+##########Zestaw 22##############
+
+#######ZAD 1########
+
+# names=['Piłka nożna','Koszykówka','Siatkówka','Golf','Lekkoatletyka','Inne']
+# percentages= [40, 29, 16, 1, 6,8]
+# plt.pie(percentages,labels=names,explode=(0.1,0,0,0,0,0),autopct='%.f%%')
+# plt.title("Wykres popularności sportów")
+# plt.show()
+
 ##########Zestaw 24##############
 
 #######ZAD 1########
@@ -128,3 +168,4 @@ import pandas as pd
 # plt.legend(loc='upper left')
 # plt.savefig('zad2.jpg')
 # plt.show()
+
