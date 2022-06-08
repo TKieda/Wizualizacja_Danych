@@ -43,19 +43,19 @@ import pandas as pd
 
 #######ZAD 1########
 
-e=np.arange(0,5)
-
-x=[0,1,2,3,4]
-y=[101, 70, 75, 25, 50]
-y1=[20, 10, 30, 10, 0]
-
-l = np.arange(0, 6)
-w = np.full(6, 120)
-
-plt.title('Tytuł')
-plt.bar(x=e, height=y, color=['teal', 'darkgreen', 'darkkhaki', 'pink', 'lawngreen'])
-plt.bar(x=e, height=y1, color=['indigo', 'cyan', 'olive', 'blue', 'blue'])
-plt.plot(l, w, 'g')
+# e=np.arange(0,5)
+#
+# x=[0,1,2,3,4]
+# y=[101, 70, 75, 25, 50]
+# y1=[20, 10, 30, 10, 0]
+#
+# l = np.arange(0, 6)
+# w = np.full(6, 120)
+#
+# plt.title('Tytuł')
+# plt.bar(x=e, height=y, color=['teal', 'darkgreen', 'darkkhaki', 'pink', 'lawngreen'])
+# plt.bar(x=e, height=y1, color=['indigo', 'cyan', 'olive', 'blue', 'blue'])
+# plt.plot(l, w, 'g')
 
 plt.axis([-0.60, 5.25, 0, 150])
 # plt.savefig('1.pdf', format='pdf')
