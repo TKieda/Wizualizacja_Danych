@@ -57,9 +57,9 @@ import pandas as pd
 # plt.bar(x=e, height=y1, color=['indigo', 'cyan', 'olive', 'blue', 'blue'])
 # plt.plot(l, w, 'g')
 
-plt.axis([-0.60, 5.25, 0, 150])
+# plt.axis([-0.60, 5.25, 0, 150])
 # plt.savefig('1.pdf', format='pdf')
-plt.show()
+# plt.show()
 
 
 ##########Zestaw 2##############
