@@ -54,3 +54,21 @@ import numpy as np
 # rok_2004.to_csv("zamowienia_2004.csv", index=False) # zapisane dane za 2004 rok do pliku zamówienia_2004.csv
 # rok_2005 = df[((df[ 'Data zamowienia'] >= '2005-01-01') & (df['Data zamowienia'] <= '2005-12-31'))] # średnią kwotę zamówienia w 2004 roku
 # rok_2005.to_csv("zamowienia_2005.csv", index=False) # zapisane dane za 2005 do pliku zamówienia_2005.csv
+
+
+n_groups = 3
+# x=np.arange(0,4,0.1)
+
+wartosci_nb=[6,33,1]
+wartosci_pm=[8,28,3]
+
+labels=['Hiper markety','Super markety','Domy handolwe']
+fig, ax = plt.subplots()
+index = np.arange(n_groups)
+bar_width = 0.5
+opacity = 0.4
+
+# index = ['Hiper markety','Super markety','Domy handolwe']
+plt.bar(index - bar_width/2, wartosci_nb, bar_width, label='Rok 2016')
+plt.bar(index + bar_width/2 , wartosci_pm, bar_width, label='Rok 2017')
+plt.xticks(index,labels,)
