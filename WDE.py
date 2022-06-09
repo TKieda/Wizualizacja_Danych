@@ -8,15 +8,6 @@ import pandas as pd
 import plotly.express as px
 
 
-
-#######ZAD 3######## ???????????????
-
-# df = pd.read_csv('apteki24.csv', header=0, sep=";", decimal=".")
-# grupa = df('Nazwa').groupby(['Rok']==2017)
-# print(grupa)
-# grupa.plot(kind='bar', ylabel='Wartosc',xlabel='Nazwa', title='Wartosc aptek w 2017', legend=True)
-# plt.show()
-
 ##########Zestaw 1##############
 
 #######ZAD 1########
@@ -83,21 +74,21 @@ import plotly.express as px
 
 #######ZAD 2########
 
-xlsx=pd.ExcelFile('mieszkania2.xlsx')
-df=pd.read_excel(xlsx, header=0)
-print(df)
-
-roczniki = df['Rok'].unique()
-grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg({'Wartość':['sum']})
-print(grupa)
-def func(pct, allvals):
-    absolute = int(np.round(pct/100.*np.sum(allvals)))
-    return "{:.1f}%\n({:d})".format(pct, absolute)
-grupa.plot(kind='pie', subplots=True, fontsize=9, figsize=(6,6),explode=(0.2,0.2,0.2),autopct=lambda pct: func(pct, grupa),textprops=dict(color="black"))
-plt.title('Wykres')
-plt.legend(title="Legenda", loc="upper left", bbox_to_anchor=(1, 0.10, 0, 0.5))
-plt.text(-1,1,166184)
-plt.show()
+# xlsx=pd.ExcelFile('mieszkania2.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+#
+# roczniki = df['Rok'].unique()
+# grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg({'Wartość':['sum']})
+# print(grupa)
+# def func(pct, allvals):
+#     absolute = int(np.round(pct/100.*np.sum(allvals)))
+#     return "{:.1f}%\n({:d})".format(pct, absolute)
+# grupa.plot(kind='pie', subplots=True, fontsize=9, figsize=(8,8),explode=(0.2,0.2,0.2),autopct=lambda pct: func(pct, grupa),textprops=dict(color="black"))
+# plt.title('Wykres',loc="center")
+# plt.legend(title="Legenda", loc="upper left", bbox_to_anchor=(0.8, 0.10, 0, 1))
+# plt.text(-1,1,166184)
+# plt.show()
 
 
 
@@ -112,12 +103,9 @@ plt.show()
 # plt.plot(labels,values1,'b--',label="Filmy")
 # plt.plot(labels,values,"g",label="Gry")
 #
-#
-#
 # plt.xlabel('Miesiąc')
 # plt.ylabel('Zyski')
 # plt.title('Zyski z filmów i gier')
-#
 #
 # plt.legend(loc='upper left')
 # plt.ylim([0,100])
