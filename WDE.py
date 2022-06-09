@@ -90,9 +90,13 @@ print(df)
 roczniki = df['Rok'].unique()
 grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg({'Wartość':['sum']})
 print(grupa)
-grupa.plot(kind='pie', subplots=True, autopct='%.2f %%', fontsize=8, figsize=(8,8), legend=(3,0),explode=(0.2,0.2,0.2))
-plt.legend()
+def func(pct, allvals):
+    absolute = int(np.round(pct/100.*np.sum(allvals)))
+    return "{:.1f}%\n({:d})".format(pct, absolute)
+grupa.plot(kind='pie', subplots=True, fontsize=12, figsize=(8,8),explode=(0.2,0.2,0.2),autopct=lambda pct: func(pct, grupa),textprops=dict(color="black"))
+
 plt.show()
+
 
 
 ##########Zestaw 11##############
