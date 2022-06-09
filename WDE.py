@@ -5,6 +5,7 @@ import random
 from PIL import Image
 import matplotlib.pyplot as plt
 import pandas as pd
+import plotly.express as px
 
 
 
@@ -39,6 +40,30 @@ import pandas as pd
 # plt.show()
 
 
+#######ZAD 2########
+
+# xlsx=pd.ExcelFile('mieszkania1.xlsx')
+# df1=pd.read_excel(xlsx, header=0)
+# print(df1)
+#
+# ind = df1[df1['Formy budownictwa'] == 'indywidualne']
+# spo = df1[df1['Formy budownictwa'] == 'spółdzielcze']
+# kom = df1[df1['Formy budownictwa'] == 'komunalne']
+#
+# lata = df1.groupby('Rok').groups.keys()
+#
+# plt.axis([2014, 2019, 0, 90000])
+# plt.bar(x = lata, height = ind['Wartość'], color = 'blue', label = 'indywidualne')
+# plt.bar(x = lata, height = spo['Wartość'], color = 'gray', label = 'spółdzielcze')
+# plt.bar(x = lata, height = kom['Wartość'], color = 'green', label = 'komunalne')
+# plt.title('Wykres wartości mieszkań w latach w zależności od formy budownictwa')
+# plt.ylabel('Wartość')
+# plt.xlabel('Lata')
+# plt.text(2014.1, 85000, '166184') # umieszczenie tekstu w odpowiednim miejscu
+# plt.legend()
+# plt.savefig('mieszkania.pdf', format='pdf')
+# plt.show()
+
 ##########Zestaw 2##############
 
 #######ZAD 1########
@@ -54,6 +79,21 @@ import pandas as pd
 # ax.legend(labels=['y=20*sin(x)', 'y=(2x/5)-2','y=7-x'], loc='lower left')
 # ax.set_title('Tytuł ABCD')
 # plt.show()
+
+
+#######ZAD 2########
+
+xlsx=pd.ExcelFile('mieszkania2.xlsx')
+df=pd.read_excel(xlsx, header=0)
+print(df)
+
+roczniki = df['Rok'].unique()
+grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg({'Wartość':['sum']})
+print(grupa)
+grupa.plot(kind='pie', subplots=True, autopct='%.2f %%', fontsize=8, figsize=(8,8), legend=(3,0),explode=(0.2,0.2,0.2))
+plt.legend()
+plt.show()
+
 
 ##########Zestaw 11##############
 
