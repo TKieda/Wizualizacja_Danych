@@ -93,8 +93,10 @@ print(grupa)
 def func(pct, allvals):
     absolute = int(np.round(pct/100.*np.sum(allvals)))
     return "{:.1f}%\n({:d})".format(pct, absolute)
-grupa.plot(kind='pie', subplots=True, fontsize=12, figsize=(8,8),explode=(0.2,0.2,0.2),autopct=lambda pct: func(pct, grupa),textprops=dict(color="black"))
-
+grupa.plot(kind='pie', subplots=True, fontsize=9, figsize=(6,6),explode=(0.2,0.2,0.2),autopct=lambda pct: func(pct, grupa),textprops=dict(color="black"))
+plt.title('Wykres')
+plt.legend(title="Legenda", loc="upper left", bbox_to_anchor=(1, 0.10, 0, 0.5))
+plt.text(-1,1,166184)
 plt.show()
 
 
