@@ -122,6 +122,7 @@ import plotly.express as px
 # print(grupa)
 # wykres = grupa.plot.bar(ylabel='Wartość', xlabel='Rok',alpha=0.5, figsize=(8,8))
 # wykres.legend().remove()
+# plt.ylabel()
 # plt.xticks(rotation=30)
 # plt.title("Jednostka w ha")
 # plt.figure(figsize=(20,10)) # wielkość wykresu
@@ -157,19 +158,19 @@ import plotly.express as px
 #######ZAD 2########
 
 
-xlsx=pd.ExcelFile('lasy12.xlsx')
-df=pd.read_excel(xlsx, header=0)
-print(df)
-grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
-print(grupa)
-wykres = grupa.plot()
-wykres.set_ylabel('Wartość')
-wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
-wykres.legend().remove()
-plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
-plt.title("W jednostkach ha")
-plt.text(2019.5, 1872000 ,'166184')
-plt.show()
+# xlsx=pd.ExcelFile('lasy12.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot()
+# wykres.set_ylabel('Wartość')
+# wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+# wykres.legend().remove()
+# plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+# plt.title("W jednostkach ha")
+# plt.text(2019.5, 1872000 ,'166184')
+# plt.show()
 
 
 ##########Zestaw 21##############
