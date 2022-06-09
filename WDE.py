@@ -79,7 +79,7 @@ import plotly.express as px
 # print(df)
 #
 # roczniki = df['Rok'].unique()
-# grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg({'Wartość':['sum']})
+# grupa = df[df['Rok'] == 2015].groupby(['Formy budownictwa']).agg('Wartość').sum()
 # print(grupa)
 # def func(pct, allvals):
 #     absolute = int(np.round(pct/100.*np.sum(allvals)))
@@ -88,6 +88,7 @@ import plotly.express as px
 # plt.title('Wykres',loc="center")
 # plt.legend(title="Legenda", loc="upper left", bbox_to_anchor=(0.8, 0.10, 0, 1))
 # plt.text(-1,1,166184)
+# plt.ylabel(None)
 # plt.show()
 
 
@@ -111,6 +112,20 @@ import plotly.express as px
 # plt.ylim([0,100])
 # plt.grid()
 # plt.show()
+
+#######ZAD 2########
+
+xlsx=pd.ExcelFile('lasy11.xlsx')
+df=pd.read_excel(xlsx, header=0)
+print(df)
+grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+print(grupa)
+wykres = grupa.plot.bar(ylabel='Wartość', xlabel='Rok',alpha=0.5, figsize=(8,8))
+wykres.legend().remove()
+plt.xticks(rotation=30)
+plt.title("Jednostka w ha")
+plt.figure(figsize=(20,10)) # wielkość wykresu
+plt.show()
 
 ##########Zestaw 12##############
 
@@ -202,4 +217,3 @@ import plotly.express as px
 # plt.legend(loc='upper left')
 # plt.savefig('zad2.jpg')
 # plt.show()
-

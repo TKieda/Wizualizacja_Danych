@@ -587,17 +587,17 @@ import pandas as pd
 
 ###Wykres kolumnowy###
 
-# xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
-# df = pd.read_excel(xlsx, header=0)
-# roczniki = df['Rok'].unique() # obsługuje przypadki, w których nie jest posortowane lub ma zduplikowane wartości
-# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
-# print(grupa)
-# wykres = grupa.plot.bar(ylabel='Liczba urodzeń', xlabel='Lata',alpha=0.5, figsize=(8,8) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
-# wykres.legend().remove() # remove - wyłącza legendę
-# plt.xticks(rotation=30)
-# plt.title("Liczba urodzeń w latach 2000-2017")
-# plt.figure(figsize=(20,10)) # wielkość wykresu
-# plt.show()
+xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
+df = pd.read_excel(xlsx, header=0)
+roczniki = df['Rok'].unique() # obsługuje przypadki, w których nie jest posortowane lub ma zduplikowane wartości
+grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+print(grupa)
+wykres = grupa.plot.bar(ylabel='Liczba urodzeń', xlabel='Lata',alpha=0.5, figsize=(8,8)) # alpha-przezroczystość wykresu, plt.barh()-odwrócenie wykresu
+wykres.legend().remove() # remove - wyłącza legendę
+plt.xticks(rotation=30)
+plt.title("Liczba urodzeń w latach 2000-2017")
+plt.figure(figsize=(20,10)) # wielkość wykresu
+plt.show()
 
 ###Wykres kołowy###
 # xlsx = pd.ExcelFile('imiona.xlsx') # wczytanie xlsx
