@@ -8,7 +8,7 @@ import pandas as pd
 import plotly.express as px
 
 
-##########Zestaw 1##############
+#############################Zestaw 1##################################
 
 #######ZAD 1########
 ###Wykres kolumnowy jeden na drugim###
@@ -55,7 +55,7 @@ import plotly.express as px
 # plt.savefig('mieszkania.pdf', format='pdf')
 # plt.show()
 
-##########Zestaw 2##############
+#############################Zestaw 2##################################
 
 #######ZAD 1########
 ###Wykres liniowy na trzy linie###
@@ -93,21 +93,18 @@ import plotly.express as px
 
 
 
-##########Zestaw 11##############
+#############################Zestaw 11##################################
 
 #######ZAD 1########
 ### Wykres liniowy na dwie linie###
 # labels=['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec']
 # values=[21,32,43,77,66,50]
 # values1=[50,42,38,22,24,30]
-#
 # plt.plot(labels,values1,'b--',label="Filmy")
 # plt.plot(labels,values,"g",label="Gry")
-#
 # plt.xlabel('Miesiąc')
 # plt.ylabel('Zyski')
 # plt.title('Zyski z filmów i gier')
-#
 # plt.legend(loc='upper left')
 # plt.ylim([0,100])
 # plt.grid()
@@ -120,15 +117,17 @@ import plotly.express as px
 # print(df)
 # grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
 # print(grupa)
-# wykres = grupa.plot.bar(ylabel='Wartość', xlabel='Rok',alpha=0.5, figsize=(8,8))
+# wykres = grupa.plot.bar(ylabel='Wartość w ha', xlabel='Rok',alpha=0.5, figsize=(8,8))
 # wykres.legend().remove()
-# plt.ylabel()
+# plt.ylim([1848000,1878000])
 # plt.xticks(rotation=30)
-# plt.title("Jednostka w ha")
+# plt.title("Lasy11.xlsx")
 # plt.figure(figsize=(20,10)) # wielkość wykresu
+# #plt.text(2015,1875,'166184')
+#
 # plt.show()
 
-##########Zestaw 12##############
+#############################Zestaw 12##################################
 
 #######ZAD 1########
 ###Podwójny wykres kolumnowy###
@@ -139,17 +138,13 @@ import plotly.express as px
 # labels=['Hiper markety','Super markety','Domy handolwe']
 # fig, ax = plt.subplots()
 # index = np.arange(n_groups)
-#
 # index = np.linspace(1,n_groups*1.2,n_groups)
-#
 # bar_width = 0.5
 # opacity = 0.4
 # plt.bar(index - bar_width/2, wartosci_nb, bar_width, label='Rok 2016')
 # plt.bar(index + bar_width/2 , wartosci_pm, bar_width, label='Rok 2017')
 # plt.xticks(index,labels)
-#
 # plt.legend(loc='upper right')
-#
 # plt.title("Informacje o sklepach")
 # plt.tight_layout()
 # plt.show()
@@ -168,12 +163,12 @@ import plotly.express as px
 # wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
 # wykres.legend().remove()
 # plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
-# plt.title("W jednostkach ha")
+# plt.title("Lasy12.xlsx")
 # plt.text(2019.5, 1872000 ,'166184')
 # plt.show()
 
 
-##########Zestaw 21##############
+#############################Zestaw 21##################################
 
 #######ZAD 1########
 
@@ -219,7 +214,7 @@ import plotly.express as px
 # plt.show()
 
 
-##########Zestaw 22##############
+#############################Zestaw 22##################################
 
 #######ZAD 1########
 ###Wykres kolumnowy###
@@ -229,7 +224,23 @@ import plotly.express as px
 # plt.title("Wykres popularności sportów")
 # plt.show()
 
-##########Zestaw 24##############
+#######ZAD 2########
+
+# xlsx=pd.ExcelFile('ceny22.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot.bar(ylabel='Wartość w zł', xlabel='Lata',alpha=0.5, figsize=(8,8))
+# wykres.legend().remove()
+# plt.ylim([3.0,5.0])
+# plt.xticks(rotation=30)
+# plt.title("Cena ryżu w Polsce w latach 2010-2020 (w zł)")
+# plt.figure(figsize=(20,10))
+# plt.show()
+
+
+#############################Zestaw 24##################################
 
 #######ZAD 1########
 ###Wykres liniowy przerywany###
@@ -244,12 +255,24 @@ import plotly.express as px
 
 #######ZAD 2########
 
-# xlsx = pd.ExcelFile('odpady24.xlsx')
-# df = pd.read_excel(xlsx, header=0)
-# print(df)
-# grupa = df.groupby('Rodzaje odpadów')['Wartość'].sum()
-# grupa.plot(kind='pie', fontsize=15, figsize=(10,10), legend=(5,5), explode=(0.2,0.2,0.2,0.2,0.2), label='')
-# plt.title('Info', fontsize=20)
-# plt.legend(loc='upper left')
-# plt.savefig('zad2.jpg')
-# plt.show()
+
+
+#############################Zestaw 31##################################
+
+
+
+
+#######ZAD 2########
+xlsx=pd.ExcelFile('motocykle31.xlsx')
+df=pd.read_excel(xlsx, header=0)
+print(df)
+grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+print(grupa)
+wykres = grupa.plot()
+wykres.set_ylabel('Wartość w szt.')
+wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+wykres.legend().remove()
+plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+plt.title("Ilość motocykli sprzedanych w sztukach")
+plt.text(2020, 1750000 ,'166184')
+plt.show()
