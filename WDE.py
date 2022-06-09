@@ -157,18 +157,19 @@ import plotly.express as px
 #######ZAD 2########
 
 
-# xlsx=pd.ExcelFile('lasy12.xlsx')
-# df=pd.read_excel(xlsx, header=0)
-# print(df)
-# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
-# print(grupa)
-# wykres = grupa.plot()
-# wykres.set_ylabel('Wartość')
-# wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
-# wykres.legend().remove()
-# plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
-# plt.title("W jednostkach ha")
-# plt.show()
+xlsx=pd.ExcelFile('lasy12.xlsx')
+df=pd.read_excel(xlsx, header=0)
+print(df)
+grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+print(grupa)
+wykres = grupa.plot()
+wykres.set_ylabel('Wartość')
+wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+wykres.legend().remove()
+plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+plt.title("W jednostkach ha")
+plt.text(2019.5, 1872000 ,'166184')
+plt.show()
 
 
 ##########Zestaw 21##############
@@ -202,18 +203,19 @@ import plotly.express as px
 
 #######ZAD 2########
 
-xlsx=pd.ExcelFile('ceny21.xlsx')
-df=pd.read_excel(xlsx, header=0)
-print(df)
-grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
-print(grupa)
-wykres = grupa.plot()
-wykres.set_ylabel('Wartość')
-wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
-wykres.legend().remove()
-plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
-plt.title("W jednostkach zł")
-plt.show()
+# xlsx=pd.ExcelFile('ceny21.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot()
+# wykres.set_ylabel('Wartość')
+# wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+# wykres.legend().remove()
+# plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+# plt.title("Wartość ryżu za kg w złotówkach")
+# plt.text(2010, 3.8 ,'166184')
+# plt.show()
 
 
 ##########Zestaw 22##############
