@@ -199,6 +199,8 @@ import plotly.express as px
 
 #######ZAD 2########
 
+###Wykres liniowy###
+
 # xlsx=pd.ExcelFile('ceny21.xlsx')
 # df=pd.read_excel(xlsx, header=0)
 # print(df)
@@ -217,6 +219,7 @@ import plotly.express as px
 #############################Zestaw 22##################################
 
 #######ZAD 1########
+
 ###Wykres kolumnowy###
 # names=['Piłka nożna','Koszykówka','Siatkówka','Golf','Lekkoatletyka','Inne']
 # percentages= [40, 29, 16, 1, 6,8]
@@ -225,6 +228,8 @@ import plotly.express as px
 # plt.show()
 
 #######ZAD 2########
+
+###Wykres kolumnowy###
 
 # xlsx=pd.ExcelFile('ceny22.xlsx')
 # df=pd.read_excel(xlsx, header=0)
@@ -238,7 +243,6 @@ import plotly.express as px
 # plt.title("Cena ryżu w Polsce w latach 2010-2020 (w zł)")
 # plt.figure(figsize=(20,10))
 # plt.show()
-
 
 #############################Zestaw 24##################################
 
@@ -256,23 +260,23 @@ import plotly.express as px
 #######ZAD 2########
 
 
-
 #############################Zestaw 31##################################
 
 
-
-
 #######ZAD 2########
-xlsx=pd.ExcelFile('motocykle31.xlsx')
-df=pd.read_excel(xlsx, header=0)
-print(df)
-grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
-print(grupa)
-wykres = grupa.plot()
-wykres.set_ylabel('Wartość w szt.')
-wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
-wykres.legend().remove()
-plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
-plt.title("Ilość motocykli sprzedanych w sztukach")
-plt.text(2020, 1750000 ,'166184')
-plt.show()
+
+###Wykres liniowy###
+
+# xlsx=pd.ExcelFile('motocykle31.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot()
+# wykres.set_ylabel('Wartość w szt.')
+# wykres.tick_params(axis='x', labelrotation=50) # labelrotation,axis - ułożenie opisów na zaznaczonym wektorze
+# wykres.legend().remove()
+# plt.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
+# plt.title("Ilość motocykli sprzedanych w sztukach")
+# plt.text(2020, 1750000 ,'166184')
+# plt.show()
