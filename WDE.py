@@ -127,6 +127,22 @@ import plotly.express as px
 #
 # plt.show()
 
+
+#
+# xlsx=pd.ExcelFile('lasy11.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+# grupa = df.groupby(['Rok']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot.bar(ylabel='Wartość ', xlabel='Lata',alpha=0.5, figsize=(8,8))
+# wykres.legend().remove()
+# plt.ylim([1848000,1878000])
+# plt.xticks(rotation=30)
+# plt.title("Wielkość lasów(ha) w 2015-2020")
+# plt.figure(figsize=(20,10)) # wielkość wykresu
+# plt.text(2015,1875,'165920')
+# plt.show()
+
 #############################Zestaw 12##################################
 
 #######ZAD 1########
@@ -259,11 +275,26 @@ import plotly.express as px
 
 #######ZAD 2########
 
+# xlsx=pd.ExcelFile('odpady24.xlsx')
+# df=pd.read_excel(xlsx, header=0)
+# print(df)
+#
+# grupa = df.groupby(['Rodzaje odpadów']).agg({'Wartość':['sum']})
+# print(grupa)
+# wykres = grupa.plot.bar(ylabel='Wartość w tonach', xlabel='Rodzaje odpadów',alpha=0.5, figsize=(8,8))
+# wykres.legend().remove()
+# plt.xticks(rotation=30)
+# plt.title("Rodzaje odpadów w 2020 roku i ich miara w tonach")
+# plt.figure(figsize=(20,10))
+# plt.text(2019.5, 1872000,'165920')
+# plt.show()
+
 
 #############################Zestaw 31##################################
 
 
 #######ZAD 2########
+
 
 ###Wykres liniowy###
 
